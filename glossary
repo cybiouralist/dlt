@@ -1,11 +1,94 @@
-DLT and Blockchain / TC159
+DLT and Blockchain / TC159 / Программно-аппаратные средства технологий распределенного реестра и блокчейн
 
-Glossary 
-1 
-2
-3
-4
-
+Glossary - глоссарий терминов 
+/main list of terms from [1] [307]/
+1 address
+2 asymmetric key cryptography public key cryptography
+2.2 key*
+3 block(s)
+4 block header
+5 block reward
+6 blockchain(s)
+7 blockchain system(s)
+8 confirmed
+9 consensus
+10 consensus mechanism
+11 cryptocurrency
+11.2 currency*
+11.3 digital currency*
+12 cryptographic hash function
+12.2 function*
+12.3hash function*
+13 cryptographic link
+14 cryptography
+15 decentralized system
+16 digital asset
+16.2 asset*
+17 digital signature
+17.2 signature*
+18 distributed application ledger application blockchain application
+19 distributed ledger(s)
+20 distributed ledger technology(ies)
+21 distributed ledger network
+22 distributed ledger system(s)
+22.2 system(s)*
+23 distributed ledger technology platform
+23.2 platform*
+24 distributed system
+25 DLT account
+26 DLT user(s)
+26.2 user(s)*
+27 double spending
+28 entity
+29 fault tolerance
+30 fork
+31 genesis block
+32 hard fork
+33 hash value
+34 hash rate (of a processor)
+35 immutability
+36 interoperability
+37 leaf node
+38 ledger
+39 ledger record
+40 Merkle tree
+41 Merkle root
+42 miner
+43 mining
+44 node(s)
+45 nonce
+46 off-chain
+47 off-ledger
+48 on-chain
+49 off-ledger
+50 oracle DLT oracle
+51 orphan block
+52 peer-to-peer
+53 permissioned
+54 permissioned distributed ledger system
+55 permissionless distributed ledger system
+56 private distributed ledger system
+57 private user distributed ledger system
+58 private key
+59 public distributed ledger system
+60 public user distributed ledger system
+61 public key
+62 record(s)
+63 reward system incentive mechanism
+64 shared ledger
+65 sidechain
+66 smart contract
+67 soft fork
+68 subchain
+69 time stamp
+70 timing service
+71 token
+71.2 security token*
+71.3 utility token*
+72 transaction(s)
+73 validated
+74 validator
+75 wallet
 
 [2] [NISTIR]
 Address
@@ -66,20 +149,68 @@ Transaction fee
 Turing complete 
 Wallet
 
-
+[3] [TC26]
+информация (information) [Федеральный закон No 149-ФЗ (статья 2)]
+информационная система (information system) [на основе ГОСТ ISO/TS 22220-2013 (п 3.4)]
+разрешенные механизмы ИС (конфигурация ИС) 
+реестр (ledger) [на основе термина «регистрационно-учетная форма», ГОСТ Р 7.0.8-2013 (п 86)]
+транзакция (transaction) [основе ГОСТ Р 55681-2013 / ISO/TR 26122:2008 (п 3.5)]
+неподтвержденная транзакция
+подтвержденной транзакция 
+блок транзакций (block) [на основе определения, предложенного ISO TC 307/SG1]
++ блок*
+цепная запись данных
+блокчейн (blockchain):
+начальный блок блокчейна (genesis block)
+внешняя информация (external information)
+внутренняя информация (internal information)
+идентификатор пользователя [ГОСТ Р ИСО ТО 13569-2007 (пункт 3.73)]
+пользователь информационной системы [ГОСТ 7.0-99 (пункт 3.1.31)]
+персональные данные [Федеральный закон No 152-ФЗ (статья 3)]
+регистрируемые действия пользователя
+уполномоченный пользователь ИС 
+пользователь-регистратор ИС
+пользователь-наблюдатель ИС
+пользователь-контролер ИС
+пользователь-валидатор ИС 
+процедура прихода к консенсусу 
+процедура прихода к консенсусу с доказательством работы (Proof-of-work) процедура прихода к консенсусу с доказательством доли (Proof-of-stake) процедура прихода к консенсусу с доказательством права (Proof-of- authority) процедура прихода к консенсусу на основе византийского соглашения
+ресурс пользователя-регистратора ИС:
++ тип реестра*
+реестр статический
+реестр динамический
+реестр изменяемый
+реестр реплицированный [на основе ГОСТ 34.321-96 (пункт 2.39)]
+реестр распределенный [на основе ГОСТ 34.321-96 (пункт 2.39)]
+ИС с реестром публичная (общедоступная) 
+ИС с реестром с ограничениями на просмотр 
+ИС с реестром совместная
+ИС с реестром с ограничениями на добавление информации
+ИС с реестром анонимная (псевдонимная)
+ИС с реестром приватная
+ИС с реестром конфиденциальная 
+ИС с реестром иерархическая 
+умный контракт (smart-contract)
+чейнкод (chaincode)
+обособленный канал ИС с реестром (channel)
+биткойн
+Корда
+Мастерчейн
+Хайперледжер Фабрик (Hyperledger Fabric)
 
 * terms opened to disscussion / 
-** new terms from the TC26 / 
+** new terms from the [TC26] / 
 
 Additional terms:
 
 Appendix:
 
-Источники / References: https://docs.google.com/document/d/159G_9kZYsb4D2joLd5RlufXYZ9PeBzNZA2Nv0rWYgOI/edit?usp=sharing
-[1] [ISO307]
+Источники / References: 
+[1] [307]
 [2] [NISTIR]
 [3] [TC26]
 [4] ..
 [5] ..
+https://docs.google.com/document/d/159G_9kZYsb4D2joLd5RlufXYZ9PeBzNZA2Nv0rWYgOI/edit?usp=sharing
 
-Creative commons lisence 2018 (c)
+Creative commons lisence 2018 (c) A.Vlasov
