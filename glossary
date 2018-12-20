@@ -12,6 +12,7 @@ Glossary - глоссарий терминов
 5.2 block data* [NISTIR]
 5.3 block reward* [NISTIR] 
 6 blockchain(s)
+6.2 цепная запись данных* [TC26]
 7 blockchain system(s)
 7.2 system(s)*
 7.3 blockchain network user* [NISTIR]
@@ -23,10 +24,22 @@ Glossary - глоссарий терминов
 7.9 checksum* [NISTIR]  
 7.10 conflict* [NISTIR]
 7.11 conflict resolution* [NISTIR]
+7.11 идентификатор пользователя* [TC26] [ГОСТ Р ИСО ТО 13569-2007 (пункт 3.73)]
+7.12 пользователь информационной системы* [TC26] [ГОСТ 7.0-99 (пункт 3.1.31)]
+7.13 персональные данные* [TC26] [Федеральный закон No 152-ФЗ (статья 3)]
+7.14 регистрируемые действия пользователя* [TC26]
+7.15 уполномоченный пользователь ИС* [TC26] 
+7.16 пользователь-регистратор ИС* [TC26]
+7.17 пользователь-наблюдатель ИС* [TC26]
+7.18 пользователь-контролер ИС* [TC26]
+7.19 пользователь-валидатор ИС* [TC26]
+7.20 ресурс пользователя-регистратора ИС* [TC26]
+7.21 chaincode /чейнкод* [TC26]
 8 confirmed
 9 consensus
 10 consensus mechanism
-10.1 Consensus model* [NISTIR] 
+10.1 consensus model* [NISTIR] 
+10.2 процедура прихода к консенсусу* [TC26]
 11 cryptocurrency
 11.2 currency*
 11.3 digital currency*
@@ -63,12 +76,37 @@ Glossary - глоссарий терминов
 30 fork
 31 genesis block
 32 hard fork
+Hash chain* [NISTIR]
+Hash digest* [NISTIR]
+Hash value* [NISTIR]
+Hashing* [NISTIR]
 33 hash value
 34 hash rate (of a processor)
-35 immutability
+35 immutability (Immutable [NISTIR])
 36 interoperability
+36.2 incentive mechanism* [NISTIR]
+36.3 information / информация* [TC26] [Федеральный закон No 149-ФЗ (статья 2)]
+36.4 information system / информационная система* [TC26] ([на основе ГОСТ ISO/TS 22220-2013 (п 3.4)] 
+36.5 разрешенные механизмы ИС* (конфигурация ИС)* [TC26]
+36.6 external information / внешняя информация* [TC26]
+36.7 internal information / внутренняя информация* [TC26]
 37 leaf node
 38 ledger
+38.1 тип реестра*
+38.2 реестр статический* [TC26]
+38.3 реестр динамический* [TC26]
+38.4 реестр изменяемый* [TC26]
+38.5 реестр реплицированный* [TC26][на основе ГОСТ 34.321-96 (пункт 2.39)]
+38.6 реестр распределенный* [TC26][на основе ГОСТ 34.321-96 (пункт 2.39)]
+38.7 ИС с реестром публичная (общедоступная)* [TC26]
+38.8 ИС с реестром с ограничениями на просмотр* [TC26]
+38.9 ИС с реестром совместная* [TC26]
+38.10 ИС с реестром с ограничениями на добавление информации* [TC26]
+38.11 ИС с реестром анонимная (псевдонимная)* [TC26]
+38.12 ИС с реестром приватная* [TC26]
+38.13 ИС с реестром конфиденциальная* [TC26]
+38.14 ИС с реестром иерархическая* [TC26]
+38.15 обособленный канал ИС с реестром (channel)* [TC26]
 39 ledger record
 40 Merkle tree
 41 Merkle root
@@ -76,6 +114,8 @@ Glossary - глоссарий терминов
 43 mining
 44 node(s)
 44.2 full node* [NISTIR]
+44.3 lightweight node* [NISTIR]
+44.4 publishing node* [NISTIR]
 45 nonce
 46 off-chain
 47 off-ledger
@@ -83,32 +123,57 @@ Glossary - глоссарий терминов
 49 off-ledger
 50 oracle DLT oracle
 51 orphan block
+52.2 nonce Orphan block* [NISTIR]
 52 peer-to-peer
+52.3 ending transaction pool* [NISTIR]
 53 permissioned
+53.2 permissionless
+53.3 permissions
 54 permissioned distributed ledger system
 55 permissionless distributed ledger system
 56 private distributed ledger system
 57 private user distributed ledger system
-58 private key
+58 private key (public key cryptography [NISTIR])
+58.2 proof of stake consensus model* [NISTIR] / 
+процедура прихода к консенсусу с доказательством доли* [TC26]
+58.3 proof of work consensus model* [NISTIR] / 
+процедура прихода к консенсусу с доказательством работы* [TC26]
+58.4 proof of authority / процедура прихода к консенсусу с доказательством права* [TC26]
+58.5 процедура прихода к консенсусу на основе византийского соглашения* [TC26]
 59 public distributed ledger system
 60 public user distributed ledger system
 61 public key
 62 record(s)
-63 reward system incentive mechanism
+63 reward system incentive mechanism (reward system [NISTIR])
+63.2 round robin consensus model* [NISTIR]
 64 shared ledger
 65 sidechain
 66 smart contract
 67 soft fork
 68 subchain
+68.2 tamper evident * [NISTIR]
+68.3 tamper resistant* [NISTIR]
 69 time stamp
 70 timing service
 71 token
 71.2 security token*
 71.3 utility token*
 72 transaction(s)
+72.2 transaction fee* [NISTIR]
+72.3 turing complete* [NISTIR]
+72.4 неподтвержденная транзакция* [TC26]
+72.5 подтвержденной транзакция* [TC26]
+72.6 блок транзакций* [TC26]
 73 validated
 74 validator
 75 wallet
+75.2 bitcoin / биткойн* [TC26]
+75.3 Корда* [TC26]
+75.4 Мастерчейн* [TC26]
+75.5 Hyperledger Fabric / Хайперледжер Фабрик* [TC26]
+<end>
+* terms opened to disscussion / термины для обсуждения (на включение в список)
+** new terms from the [NISTIR]; [TC26] / новые термины из [NISTIR]; [TC26], которых нет в [307]
 
 [2] [NISTIR]
 Address
@@ -123,7 +188,8 @@ Blockchain network user
 Byzantine fault tolerant proof of stake consensus model
 Centralized network
 Chain-based proof of stake consensus model
-Checksum Confirmed
+Checksum 
+Confirmed
 Conflict
 Conflict resolution
 Consensus model
@@ -153,7 +219,8 @@ Mining
 Pending transaction pool
 Publishing node
 Node
-Nonce Orphan block Permissioned
+Nonce Orphan block 
+Permissioned
 Permissionless
 Permissions
 Proof of stake consensus model
@@ -163,7 +230,8 @@ Reward system
 Round robin consensus model
 Smart contract
 Soft fork
-Tamper evident Tamper resistant
+Tamper evident 
+Tamper resistant
 Transaction 
 Transaction fee 
 Turing complete 
@@ -178,9 +246,9 @@ Wallet
 неподтвержденная транзакция
 подтвержденной транзакция 
 блок транзакций (block) [на основе определения, предложенного ISO TC 307/SG1]
-+ блок*
++ блок/ block*
 цепная запись данных
-блокчейн (blockchain):
+блокчейн (blockchain)
 начальный блок блокчейна (genesis block)
 внешняя информация (external information)
 внутренняя информация (internal information)
@@ -194,8 +262,11 @@ Wallet
 пользователь-контролер ИС
 пользователь-валидатор ИС 
 процедура прихода к консенсусу 
-процедура прихода к консенсусу с доказательством работы (Proof-of-work) процедура прихода к консенсусу с доказательством доли (Proof-of-stake) процедура прихода к консенсусу с доказательством права (Proof-of- authority) процедура прихода к консенсусу на основе византийского соглашения
-ресурс пользователя-регистратора ИС:
+процедура прихода к консенсусу с доказательством работы (Proof-of-work) 
+процедура прихода к консенсусу с доказательством доли (Proof-of-stake) 
+процедура прихода к консенсусу с доказательством права (Proof-of- authority) 
+процедура прихода к консенсусу на основе византийского соглашения
+ресурс пользователя-регистратора ИС
 + тип реестра*
 реестр статический
 реестр динамический
@@ -218,8 +289,6 @@ Wallet
 Мастерчейн
 Хайперледжер Фабрик (Hyperledger Fabric)
 
-* terms opened to disscussion / 
-** new terms from the [TC26] / 
 
 Additional terms:
 
