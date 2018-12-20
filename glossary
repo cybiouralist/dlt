@@ -3,26 +3,42 @@ DLT and Blockchain / TC159 / Программно-аппаратные сред�
 Glossary - глоссарий терминов 
 /main list of terms from [1] [307]/
 1 address
-2 asymmetric key cryptography public key cryptography
+2 asymmetric key cryptography / public key cryptography
 2.2 key*
+2.3.asset(s)* [NISTIR]
 3 block(s)
 4 block header
 5 block reward
+5.2 block data* [NISTIR]
+5.3 block reward* [NISTIR] 
 6 blockchain(s)
 7 blockchain system(s)
+7.2 system(s)*
+7.3 blockchain network user* [NISTIR]
+7.4 user*
+7.5 network*
+7.6 byzantine fault tolerant proof of stake consensus model* [NISTIR]
+7.7 centralized network* [NISTIR] 
+7.8 chain-based proof of stake consensus model* [NISTIR] 
+7.9 checksum* [NISTIR]  
+7.10 conflict* [NISTIR]
+7.11 conflict resolution* [NISTIR]
 8 confirmed
 9 consensus
 10 consensus mechanism
+10.1 Consensus model* [NISTIR] 
 11 cryptocurrency
 11.2 currency*
 11.3 digital currency*
 12 cryptographic hash function
 12.2 function*
-12.3hash function*
+12.3 hash function*
 13 cryptographic link
+13.2 cryptographic nonce* [NISTIR] 
 14 cryptography
 15 decentralized system
-16 digital asset
+15.2 decentralized network* [NISTIR]
+16 digital asset (digest digital asset [NISTIR])
 16.2 asset*
 17 digital signature
 17.2 signature*
@@ -35,10 +51,13 @@ Glossary - глоссарий терминов
 23 distributed ledger technology platform
 23.2 platform*
 24 distributed system
+24.2 distributed network* [NISTIR]
 25 DLT account
 26 DLT user(s)
 26.2 user(s)*
 27 double spending
+27.2 double spend (problem)* [NISTIR]
+27.3 double spend (attack)* [NISTIR]
 28 entity
 29 fault tolerance
 30 fork
@@ -56,6 +75,7 @@ Glossary - глоссарий терминов
 42 miner
 43 mining
 44 node(s)
+44.2 full node* [NISTIR]
 45 nonce
 46 off-chain
 47 off-ledger
