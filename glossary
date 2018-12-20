@@ -267,7 +267,7 @@ Wallet
 процедура прихода к консенсусу с доказательством права (Proof-of- authority) 
 процедура прихода к консенсусу на основе византийского соглашения
 ресурс пользователя-регистратора ИС
-+ тип реестра*
+ тип реестра*
 реестр статический
 реестр динамический
 реестр изменяемый
@@ -289,17 +289,40 @@ Wallet
 Мастерчейн
 Хайперледжер Фабрик (Hyperledger Fabric)
 
+[4] [WTO]:
+Asymmetric key algorithms
+Blockchain
+Byzantine Fault
+Consensus protocol
+Cryptocurrency
+Cryptography
+Decentralized autonomous organization (DAO)
+Digital signature
+Distributed ledger
+Encryption
+Ethereum
+Fiat currency
+Hashing
+Merkle Root and Merkle Tree
+Miner
+Mining
+Node
+Nonce
+Open source
+Oracle
+QR code
+Shard/sharding
+Smart contract
+Symmetric key algorithms
+Time-stamping
 
 Additional terms:
-
 Appendix:
-
 Источники / References: 
 [1] [307]
 [2] [NISTIR]
 [3] [TC26]
-[4] ..
-[5] ..
-https://docs.google.com/document/d/159G_9kZYsb4D2joLd5RlufXYZ9PeBzNZA2Nv0rWYgOI/edit?usp=sharing
+[4] [WTO]
+[5] https://docs.google.com/document/d/159G_9kZYsb4D2joLd5RlufXYZ9PeBzNZA2Nv0rWYgOI/edit?usp=sharing
 
 Creative commons lisence 2018 (c) A.Vlasov
