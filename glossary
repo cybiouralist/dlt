@@ -2,28 +2,34 @@ DLT and Blockchain / TC159 / Программно-аппаратные сред�
 
 Glossary - глоссарий терминов 
 /main list of terms from [1] [307]/
-1 address
-2 asymmetric key cryptography / public key cryptography
-2.2 key*
-2.3.asset(s)* [NISTIR]
-3 block(s)
-4 block header
-5 block reward
-5.2 block data* [NISTIR]
-5.3 block reward* [NISTIR] 
-6 blockchain(s)
+1 address - [307] ...
+[NISTIR] a short, alphanumeric string derived from a user’s public key using a hash function, with additional data to detect errors. Addresses are used to send and receive digital assets.
+2 asymmetric key cryptography / public key cryptography - 
+[NISTIR] a cryptographic system where users have a private key that is kept secret and used to generate a public key (which is freely provided to others). Users can digitally sign data with their private key and the resulting signature can be verified by anyone using the corresponding public key.
+2.2 key* - 
+2.3.asset(s)* [NISTIR] - anything that can be transferred.
+3 block(s) - 
+[NISTIR] a data structure containing a block header and block data.
+4 block header - 
+[NISTIR] the portion of a block that contains information about the block itself (block metadata), typically including a timestamp, a hash representation of the block data, the hash of the previous block’s header, and a cryptographic nonce (if needed).
+5 block reward - 
+[NISTIR] a reward (typically cryptocurrency) awarded to publishing nodes for successfully adding a block to the blockchain.
+5.2 block data* [NISTIR] - the portion of a block that contains a set of validated transactions and ledger events.
+5.3 block reward* [NISTIR] - A reward (typically cryptocurrency) awarded to publishing nodes for successfully adding a block to the blockchain. 
+6 blockchain(s) - 
+[NISTIR] blockchains are distributed digital ledgers of cryptographically signed transactions that are grouped into blocks. Each block is cryptographically linked to the previous one (making it tamper evident) after validation and undergoing a consensus decision. As new blocks are added, older blocks become more difficult to modify (creating tamper resistance). New blocks are replicated across copies of the ledger within the network, and any conflicts are resolved automatically using established rules.
 6.2 цепная запись данных* [TC26]
 7 blockchain system(s)
 7.2 system(s)*
-7.3 blockchain network user* [NISTIR]
+7.3 blockchain network user* [NISTIR] - any single person, group, business, or organization which is using or operating a blockchain node.
 7.4 user*
 7.5 network*
-7.6 byzantine fault tolerant proof of stake consensus model* [NISTIR]
-7.7 centralized network* [NISTIR] 
-7.8 chain-based proof of stake consensus model* [NISTIR] 
-7.9 checksum* [NISTIR]  
-7.10 conflict* [NISTIR]
-7.11 conflict resolution* [NISTIR]
+7.6 byzantine fault tolerant proof of stake consensus model* [NISTIR] - a proof of stake consensus model where the blockchain decides the next block by allowing all staked members to “vote” on which submitted block to include next.
+7.7 centralized network* [NISTIR] - a network configuration where participants must communicate with a central authority to communicate with one another. Since all participants must go through a single centralized source, the loss of that source would prevent all participants from communicating.
+7.8 chain-based proof of stake consensus model* [NISTIR] - a proof of stake consensus model where the blockchain network decides the next block through pseudo-random selection, based on a personal stake to overall system asset ratio.
+7.9 checksum* [NISTIR] - value computed on data to detect error or manipulation.
+7.10 conflict* [NISTIR] - one or more participants disagree on the state of the system.
+7.11 conflict resolution* [NISTIR] - a predefined method for coming to a consensus on the state of the system. For example, when portions of the system participants claim there is State_A and the rest of the participants claim there is State_B, there is a conflict. The system will automatically resolve this conflict by choosing the “valid” state as being the one from whichever group adds the next block of data. Any transactions “lost” by the state not chosen are added back into the pending transaction pool.
 7.11 идентификатор пользователя* [TC26] [ГОСТ Р ИСО ТО 13569-2007 (пункт 3.73)]
 7.12 пользователь информационной системы* [TC26] [ГОСТ 7.0-99 (пункт 3.1.31)]
 7.13 персональные данные* [TC26] [Федеральный закон No 152-ФЗ (статья 3)]
@@ -35,10 +41,12 @@ Glossary - глоссарий терминов
 7.19 пользователь-валидатор ИС* [TC26]
 7.20 ресурс пользователя-регистратора ИС* [TC26]
 7.21 chaincode /чейнкод* [TC26]
-8 confirmed
-9 consensus
-10 consensus mechanism
-10.1 consensus model* [NISTIR] 
+8 confirmed / confirmed transaction(s) - 
+[NISTIR] state of a transaction or block when consensus has been reached about its status of inclusion into the blockchain.
+9 consensus - 
+10 consensus mechanism - 
+10.1 consensus model* [NISTIR] - a process to achieve agreement within a distributed system on the valid state.
+Also known as a consensus algorithm, consensus mechanism, consensus method.
 10.2 процедура прихода к консенсусу* [TC26]
 11 cryptocurrency
 11.2 currency*
@@ -325,4 +333,4 @@ Appendix:
 [4] [WTO]
 [5] https://docs.google.com/document/d/159G_9kZYsb4D2joLd5RlufXYZ9PeBzNZA2Nv0rWYgOI/edit?usp=sharing
 
-Creative commons lisence 2018 (c) A.Vlasov
+Creative Commons Attribution licence (CC-BY) 2018 (c) A.Vlasov
