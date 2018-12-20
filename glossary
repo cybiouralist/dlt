@@ -11,9 +11,62 @@ Glossary
 Address
 Assets
 Asymmetric-key cryptography
-Block Block data
+Block 
+Block data
 Block header
-Block reward Blockchain
+Block reward 
+Blockchain
+Blockchain network user
+Byzantine fault tolerant proof of stake consensus model
+Centralized network
+Chain-based proof of stake consensus model
+Checksum Confirmed
+Conflict
+Conflict resolution
+Consensus model
+Cryptocurrency
+Cryptographic hash function
+Cryptographic nonce
+Decentralized network
+Digest Digital asset
+Digital signature
+Distributed network
+Double spend (problem)
+Double spend (attack)
+Fault tolerance Fork
+Full node 
+Genesis block 
+Hard fork 
+Hash chain
+Hash digest
+Hash rate
+Hash value Hashing
+Immutable
+Incentive mechanism
+Ledger
+Lightweight node
+Merkle tree
+Mining
+Pending transaction pool
+Publishing node
+Node
+Nonce Orphan block Permissioned
+Permissionless
+Permissions
+Proof of stake consensus model
+Proof of work consensus model
+Public key cryptography
+Reward system
+Round robin consensus model
+Smart contract
+Soft fork
+Tamper evident Tamper resistant
+Transaction 
+Transaction fee 
+Turing complete 
+Wallet
+
+
 
 * terms opened to disscussion / 
 ** new terms from the TC26 / 
