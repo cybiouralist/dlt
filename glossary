@@ -33,35 +33,45 @@ Glossary - глоссарий терминов
 7.11 идентификатор пользователя* [TC26] [ГОСТ Р ИСО ТО 13569-2007 (пункт 3.73)]
 7.12 пользователь информационной системы* [TC26] [ГОСТ 7.0-99 (пункт 3.1.31)]
 7.13 персональные данные* [TC26] [Федеральный закон No 152-ФЗ (статья 3)]
-7.14 регистрируемые действия пользователя* [TC26]
-7.15 уполномоченный пользователь ИС* [TC26] 
-7.16 пользователь-регистратор ИС* [TC26]
-7.17 пользователь-наблюдатель ИС* [TC26]
-7.18 пользователь-контролер ИС* [TC26]
-7.19 пользователь-валидатор ИС* [TC26]
-7.20 ресурс пользователя-регистратора ИС* [TC26]
-7.21 chaincode /чейнкод* [TC26]
-8 confirmed / confirmed transaction(s) - 
+7.14 регистрируемые действия пользователя* [TC26] 
+7.15 уполномоченный пользователь ИС* [TC26]  
+7.16 пользователь-регистратор ИС* [TC26] 
+7.17 пользователь-наблюдатель ИС* [TC26] 
+7.18 пользователь-контролер ИС* [TC26] 
+7.19 пользователь-валидатор ИС* [TC26] 
+7.20 ресурс пользователя-регистратора ИС* [TC26] 
+7.21 chaincode /чейнкод* [TC26] 
+8 confirmed / confirmed transaction(s) - [307] 
 [NISTIR] state of a transaction or block when consensus has been reached about its status of inclusion into the blockchain.
 9 consensus - 
 10 consensus mechanism - 
 10.1 consensus model* [NISTIR] - a process to achieve agreement within a distributed system on the valid state.
 Also known as a consensus algorithm, consensus mechanism, consensus method.
 10.2 процедура прихода к консенсусу* [TC26]
-11 cryptocurrency
+11 cryptocurrency -
+[NISTIR] a digital asset/credit/unit within the system, which is cryptographically sent from one blockchain network user to another. In the case of cryptocurrency creation (such as the reward for mining), the publishing node includes a transaction sending the newly created cryptocurrency to one or more blockchain network users.
+These assets are transferred from one user to another by using digital signatures with asymmetric-key pairs.
 11.2 currency*
 11.3 digital currency*
-12 cryptographic hash function
+12 cryptographic hash function - [307]
+[NISTIR] A function that maps a bit string of arbitrary length to a fixed-length bit string. Approved hash functions satisfy the following properties:
+1/ (Preimage resistant) It is computationally infeasible to compute the correct input value given some output value (the hash function is ‘one way’).
+2/ (Second preimage resistant) One cannot find an input that hashes to a specific output.
+3/ (Collision resistant) It is computationally infeasible to find any two distinct inputs that map to the same output.
+See the NIST SP 800-175B Guideline for Using Cryptographic Standards in the Federal Government: Cryptographic Mechanisms, http://dx.doi.org/10.6028/NIST.SP.800-175B.
 12.2 function*
 12.3 hash function*
 13 cryptographic link
-13.2 cryptographic nonce* [NISTIR] 
+13.2 cryptographic nonce* [NISTIR] - an arbitrary number that is used once. 
 14 cryptography
 15 decentralized system
-15.2 decentralized network* [NISTIR]
-16 digital asset (digest digital asset [NISTIR])
+15.2 decentralized network* [NISTIR] - a network configuration where there are multiple authorities that serve as a centralized hub for a subsection of participants. Since some participants are behind a centralized hub, the loss of that hub will prevent those participants from communicating.
+16 digital asset - [307]
+[NISTIR] - any asset that is purely digital, or is a digital representation of a physical asset.
 16.2 asset*
-17 digital signature
+16.3 digest* [NISTIR] - see "hash digest".
+17 digital signature - [307]
+[NISTIR] a cryptographic technique that utilizes asymmetric-keys to determine authenticity (i.e., users can verify that the message was signed with a private key corresponding to the specified public key), non-repudiation (a user cannot deny having sent a message) and integrity (that the message was not altered during transmission).
 17.2 signature*
 18 distributed application ledger application blockchain application
 19 distributed ledger(s)
@@ -70,15 +80,16 @@ Also known as a consensus algorithm, consensus mechanism, consensus method.
 22 distributed ledger system(s)
 22.2 system(s)*
 23 distributed ledger technology platform
-23.2 platform*
-24 distributed system
-24.2 distributed network* [NISTIR]
-25 DLT account
+23.2 platform* 
+24 distributed system 
+24.2 distributed network* [NISTIR] - a network configuration where every participant can communicate with one another without going through a centralized point. Since there are multiple pathways for communication, the loss of any participant will not prevent communication.
+This is also known as a "peer-to-peer network".
+25 DLT account 
 26 DLT user(s)
 26.2 user(s)*
 27 double spending
-27.2 double spend (problem)* [NISTIR]
-27.3 double spend (attack)* [NISTIR]
+27.2 double spend (problem)* [NISTIR] - transacting with the same set of digital assets more than once. This is a problem which has plagued many digital money systems, and a problem that most blockchain networks are designed to prevent.
+27.3 double spend (attack)* [NISTIR] - an attack where a blockchain network user attempts to explicitly double spend a digital asset.
 28 entity
 29 fault tolerance
 30 fork
