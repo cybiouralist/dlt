@@ -4,12 +4,21 @@ Glossary - глоссарий терминов
 /main list of terms from [1] [307]/
 1 address - [307] ...
 [NISTIR] a short, alphanumeric string derived from a user’s public key using a hash function, with additional data to detect errors. Addresses are used to send and receive digital assets.
+[ME] most generally, this represents an EOA or contract, which can receive (destination address) or send (source address) transactions on the blockchain. More specifically, it is the right-most 160 bits of a Keccak hash of an ECDSA public key.
+[MB] a bitcoin address looks like 1DSrfJdB2AnWaFNgSbv3MZC2m74996JafV. It consists of a string of letters and numbers. It’s really an encoded base58check version of a public key 160-bit hash. Just as you ask others to send an email to your email address, you would ask others to send you bitcoin to one of your bitcoin addresses.
+1.2 account* [ME] - an object containing an address, balance, and nonce, and optional storage and code. An account can be a contract account or an EOA (externally owned account).
+1.3 assert* [ME] - in Solidity assert(false) compiles to 0xfe, which is an invalid opcode, using up all remaining gas, and reverting all changes. When an assert() statement fails, something very wrong and unexpected should be happening, and you will need to fix your code. You should use assert to avoid conditions which should never, ever occur.
 2 asymmetric key cryptography / public key cryptography - 
 [NISTIR] a cryptographic system where users have a private key that is kept secret and used to generate a public key (which is freely provided to others). Users can digitally sign data with their private key and the resulting signature can be verified by anyone using the corresponding public key.
 2.2 key* - 
 2.3.asset(s)* [NISTIR] - anything that can be transferred.
+2.4 BIP* [MB]; [ME] - Bitcoin Improvement Proposals. A set of proposals that members of the bitcoin community have submitted to improve bitcoin. For example, BIP-21 is a proposal to improve the bitcoin uniform resource identifier (URI) scheme.
+2.5 big-endian* [ME] - A positional number representation where the most significant digit is first. The opposite of little-endian, where the least significant digit is first.
+2.6 Bitcoin* [MB] - the name of the currency unit (the coin), the network, and the software.
 3 block(s) - 
 [NISTIR] a data structure containing a block header and block data.
+[ME] a block is a collection of required information (a block header) about the comprised transactions, and a set of other block headers known as ommers. It is added to the Ethereum network by miners.
+[MB] a grouping of transactions, marked with a timestamp, and a fingerprint of the previous block. The block header is hashed to produce a proof of work, thereby validating the transactions. Valid blocks are added to the main blockchain by network consensus.
 4 block header - 
 [NISTIR] the portion of a block that contains information about the block itself (block metadata), typically including a timestamp, a hash representation of the block data, the hash of the previous block’s header, and a cryptographic nonce (if needed).
 5 block reward - 
@@ -191,8 +200,9 @@ Hashing* [NISTIR]
 75.4 Мастерчейн* [TC26]
 75.5 Hyperledger Fabric / Хайперледжер Фабрик* [TC26]
 <end>
-* terms opened to disscussion / термины для обсуждения (на включение в список)
-** new terms from the [NISTIR]; [TC26] / новые термины из [NISTIR]; [TC26], которых нет в [307]
+
+* terms opened to disscussion / термины для обсуждения (на включение в терминологию DLT)
+& new terms from the [NISTIR]; [TC26] / новые термины из [NISTIR]; [TC26]; [ME]; [MB], которых нет в [307]
 
 [2] [NISTIR]
 Address
@@ -336,7 +346,11 @@ Symmetric key algorithms
 Time-stamping
 
 Дополнительные термины / Additional terms:
+Account 
 Alternative finance
+Assert
+big-endian
+BIP (Bitcoin Improvement Proposals)
 Bitcoin
 Crowd
 Crowdfunding
@@ -371,6 +385,8 @@ https://docs.google.com/spreadsheets/d/1ls5RxhQ9IPPpqZttqSxkINXj1REOJ1QqPsGukTu4
 [2] [NISTIR]
 [3] [TC26]
 [4] [WTO]
-[5] https://docs.google.com/document/d/159G_9kZYsb4D2joLd5RlufXYZ9PeBzNZA2Nv0rWYgOI/edit?usp=sharing
+[5] [ME]
+[6] [MB]
+[7] https://docs.google.com/document/d/159G_9kZYsb4D2joLd5RlufXYZ9PeBzNZA2Nv0rWYgOI/edit?usp=sharing
 
 Creative Commons Attribution licence (CC-BY) 2018 (c) A.Vlasov
