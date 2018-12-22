@@ -95,9 +95,9 @@ This is also known as a "peer-to-peer network".
 30 fork
 31 genesis block
 32 hard fork
-Hash chain* [NISTIR]
-Hash digest* [NISTIR]
-Hash value* [NISTIR]
+32.2 Hash chain* [NISTIR]
+32.3 Hash digest* [NISTIR]
+32.4 Hash value* [NISTIR]
 Hashing* [NISTIR]
 33 hash value
 34 hash rate (of a processor)
@@ -335,8 +335,37 @@ Smart contract
 Symmetric key algorithms
 Time-stamping
 
-Additional terms:
+Дополнительные термины / Additional terms:
+Alternative finance
+Bitcoin
+Crowd
+Crowdfunding
+Crowdinvesting
+Data economy
+Decentralized autonomous organization (DAO)
+Digital economy 
+Digital right
+Digital token (digital financial token)
+Economy (economics)
+Ethereum
+Fiat currency
+Finance
+Fintech
+ICO
+Oracle
+QR code
+Regulation
+Regulator
+Scam
+Shard/sharding
+STO
+Security token
+Token
+
 Appendix:
+A1 Таблица сравнения упоминания терминов / Terms comparative table: 
+https://docs.google.com/spreadsheets/d/1ls5RxhQ9IPPpqZttqSxkINXj1REOJ1QqPsGukTu4h3Q/edit?usp=sharing
+
 Источники / References: 
 [1] [307]
 [2] [NISTIR]
