@@ -15,6 +15,7 @@ Glossary - глоссарий терминов
 2.4 BIP* [MB]; [ME] - Bitcoin Improvement Proposals. A set of proposals that members of the bitcoin community have submitted to improve bitcoin. For example, BIP-21 is a proposal to improve the bitcoin uniform resource identifier (URI) scheme.
 2.5 big-endian* [ME] - A positional number representation where the most significant digit is first. The opposite of little-endian, where the least significant digit is first.
 2.6 Bitcoin* [MB] - the name of the currency unit (the coin), the network, and the software.
+2.7 
 3 block(s) - 
 [NISTIR] a data structure containing a block header and block data.
 [ME] a block is a collection of required information (a block header) about the comprised transactions, and a set of other block headers known as ommers. It is added to the Ethereum network by miners.
@@ -118,6 +119,10 @@ Hashing* [NISTIR]
 36.5 разрешенные механизмы ИС* (конфигурация ИС)* [TC26]
 36.6 external information / внешняя информация* [TC26]
 36.7 internal information / внутренняя информация* [TC26]
+36.8 Keccak256* [ME] - cryptographic hash function used in Ethereum. Keccak256 was standardised to SHA-3.
+36.9 Key Derivation Function (KDF)* [ME] - also known as a password stretching algorithm, it is used by keystore format which to protect against brute-force, dictionary, or rainbow table attacks against the passphrase encryption. It repeatedly hashes the passphrase.
+36.10 keystore file* [ME] - a JSON-encoded file that contains a single (randomly generated) private key, encrypted by a passphrase for extra security.
+36.11 KYC* [MB] - know your customer (KYC) is the process of a business, identifying and verifying the identity of its clients. The term is also used to refer to the bank regulation which governs these activities.
 37 leaf node
 38 ledger
 38.1 тип реестра*
@@ -181,21 +186,28 @@ Hashing* [NISTIR]
 68 subchain
 68.2 tamper evident * [NISTIR]
 68.3 tamper resistant* [NISTIR]
+68.4 testnet* - [ME] a test network (testnet for short) is used to simulate the behavior of the main Ethereum network. 
 69 time stamp
 70 timing service
 71 token
 71.2 security token*
 71.3 utility token*
-72 transaction(s)
+72 transaction(s) - [307] 
+[MB] In simple terms, a transfer of bitcoin from one address to another. More precisely, a transaction is a signed data structure expressing a transfer of value. Transactions are transmitted over the bitcoin network, collected by miners, and included into blocks, made permanent on the blockchain.
 72.2 transaction fee* [NISTIR]
 72.3 turing complete* [NISTIR]
 72.4 неподтвержденная транзакция* [TC26]
 72.5 подтвержденной транзакция* [TC26]
 72.6 блок транзакций* [TC26]
+72.7 transaction pool* [MB] - an unordered collection of transactions that are not in blocks in the main chain, but for which we have input transactions.
+72.8 turing completeness* [MB] - a program language is called "Turing complete" if it can run any program that a Turing machine can run, given enough time and memory.
+72.9 Turing Complete* [ME] - in computability theory, a system of data-manipulation rules (such as a computer’s instruction set, a programming language, or a cellular automaton) is said to be Turing complete or computationally universal if it can be used to simulate any Turing machine. The concept is named after English mathematician and computer scientist Alan Turing.
 73 validated
 74 validator
-75 wallet
-75.2 bitcoin / биткойн* [TC26]
+75 wallet - [307]
+[ME] software that holds all your secret keys. Used as the interface to access and control your Ethereum accounts and interact with Smart Contracts. Notice that keys need not be stored in your wallet and can be retrieved from an offline storage (e.g. USB flash drive or paper) for improved security. Despite the name, wallets never store the actual coins or tokens.
+[MB] software that holds all your bitcoin addresses and secret keys. Use it to send, receive, and store your bitcoin.
+75.2 bitcoin / биткойн* [TC26] - 
 75.3 Корда* [TC26]
 75.4 Мастерчейн* [TC26]
 75.5 Hyperledger Fabric / Хайперледжер Фабрик* [TC26]
@@ -373,8 +385,8 @@ Regulator
 Scam
 Shard/sharding
 STO
-Security token
-Token
+Security token - 
+Token - 
 
 Appendix:
 A1 Таблица сравнения упоминания терминов / Terms comparative table: 
