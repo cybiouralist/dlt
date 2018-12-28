@@ -15,9 +15,10 @@ Glossary - глоссарий терминов
 2.4 BIP* [MB]; [ME] - Bitcoin Improvement Proposals. A set of proposals that members of the bitcoin community have submitted to improve bitcoin. For example, BIP-21 is a proposal to improve the bitcoin uniform resource identifier (URI) scheme.
 2.5 big-endian* [ME] - A positional number representation where the most significant digit is first. The opposite of little-endian, where the least significant digit is first.
 2.6 Bitcoin* [MB] - the name of the currency unit (the coin), the network, and the software.
-2.7 
+[TC26] - (описание) для системы Биткойн можно установить следующие соответствия: система Биткоин – ИС с блокчейн публичная псевдонимная; тип реестра – реплицированный; майнер – уполномоченный пользователь ИС, который может являться как пользователем-валидатором (подтверждающим создание нового блока) или пользователем-контролером, так и в результате выполнения процедуры консенсуса – пользователем-регистратором ИС; любой пользователь системы – пользователь-контролер; биткоин/сатоши – условная единица; адрес (кошелек) – идентификатор пользователя; процедура прихода к консенсусу – с доказательством работы; ресурс пользователя-регистратора ИС – вычислительная мощность узла (пула) пользователя-регистратора, выраженная в количестве вычислений хэш- функции в секунду.
 3 block(s) - 
 [NISTIR] a data structure containing a block header and block data.
+[TC26] блок транзакций; данные, содержащие набор из одной или нескольких снабжённых отметками времени транзакций и, возможно, дополнительную информацию.
 [ME] a block is a collection of required information (a block header) about the comprised transactions, and a set of other block headers known as ommers. It is added to the Ethereum network by miners.
 [MB] a grouping of transactions, marked with a timestamp, and a fingerprint of the previous block. The block header is hashed to produce a proof of work, thereby validating the transactions. Valid blocks are added to the main blockchain by network consensus.
 4 block header - 
@@ -25,12 +26,17 @@ Glossary - глоссарий терминов
 5 block reward - 
 [NISTIR] a reward (typically cryptocurrency) awarded to publishing nodes for successfully adding a block to the blockchain.
 5.2 block data* [NISTIR] - the portion of a block that contains a set of validated transactions and ledger events.
-5.3 block reward* [NISTIR] - A reward (typically cryptocurrency) awarded to publishing nodes for successfully adding a block to the blockchain. 
-6 blockchain(s) - 
+5.3 bytecode* [ME] - 
+5.4 Byzantium Fork* [ME] - Byzantium is the first of two hard forks for Metropolis development stage. It included EIP-649: Metropolis Difficulty Bomb Delay and Block Reward Reduction, where the Ice Age (see below) was delayed by 1 year, and the block reward was reduced from 5 to 3 ether.
+5.5 Byzantine Generals Problem* [MB] - a reliable computer system must be able to cope with the failure of one or more of its components. A failed component may exhibit a type of behavior that is often overlooked—​namely, sending conflicting information to different parts of the system. The problem of coping with this type of failure is expressed abstractly as the Byzantine Generals Problem.
+6 blockchain(s) - [307]  
 [NISTIR] blockchains are distributed digital ledgers of cryptographically signed transactions that are grouped into blocks. Each block is cryptographically linked to the previous one (making it tamper evident) after validation and undergoing a consensus decision. As new blocks are added, older blocks become more difficult to modify (creating tamper resistance). New blocks are replicated across copies of the ledger within the network, and any conflicts are resolved automatically using established rules.
-6.2 цепная запись данных* [TC26]
-7 blockchain system(s)
-7.2 system(s)*
+[TC26] - см. "цепная запись данных".
+[ME] a sequence of blocks validated by the proof-of-work system, each linking to its predecessor all the way to the genesis block. This varies from the Bitcoin protocol in that it does not have a block size limit; it instead uses varying gas limits.
+[MB] a list of validated blocks, each linking to its predecessor all the way to the genesis block.
+6.2 цепная запись данных* [TC26] - реестр, данные в который записываются блоками таким образом, что каждый новый блок включает информацию о предыдущем блоке.
+7 blockchain system(s) - [307]
+7.2 system(s)* 
 7.3 blockchain network user* [NISTIR] - any single person, group, business, or organization which is using or operating a blockchain node.
 7.4 user*
 7.5 network*
@@ -40,10 +46,10 @@ Glossary - глоссарий терминов
 7.9 checksum* [NISTIR] - value computed on data to detect error or manipulation.
 7.10 conflict* [NISTIR] - one or more participants disagree on the state of the system.
 7.11 conflict resolution* [NISTIR] - a predefined method for coming to a consensus on the state of the system. For example, when portions of the system participants claim there is State_A and the rest of the participants claim there is State_B, there is a conflict. The system will automatically resolve this conflict by choosing the “valid” state as being the one from whichever group adds the next block of data. Any transactions “lost” by the state not chosen are added back into the pending transaction pool.
-7.11 идентификатор пользователя* [TC26] [ГОСТ Р ИСО ТО 13569-2007 (пункт 3.73)]
-7.12 пользователь информационной системы* [TC26] [ГОСТ 7.0-99 (пункт 3.1.31)]
-7.13 персональные данные* [TC26] [Федеральный закон No 152-ФЗ (статья 3)]
-7.14 регистрируемые действия пользователя* [TC26] 
+7.11 идентификатор пользователя* [TC26] [ГОСТ Р ИСО ТО 13569-2007 (пункт 3.73)] - строка символов, используемая для однозначной идентификации каждого пользователя ИС.
+7.12 пользователь информационной системы* [TC26] [ГОСТ 7.0-99 (пункт 3.1.31)] - лицо (группа лиц, организация), пользующееся услугами ИС для получения информации или решения других задач.
+7.13 персональные данные* [TC26] [Федеральный закон No 152-ФЗ (статья 3)] - любая информация, относящаяся к прямо или косвенно определенному или определяемому физическому лицу (субъекту персональных данных).
+7.14 регистрируемые действия пользователя* [TC26] - действия пользователя, информация о которых может быть внесена в реестр согласно политикам и процедурам ИС.
 7.15 уполномоченный пользователь ИС* [TC26]  
 7.16 пользователь-регистратор ИС* [TC26] 
 7.17 пользователь-наблюдатель ИС* [TC26] 
