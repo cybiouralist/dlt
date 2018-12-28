@@ -50,13 +50,13 @@ Glossary - глоссарий терминов
 7.12 пользователь информационной системы* [TC26] [ГОСТ 7.0-99 (пункт 3.1.31)] - лицо (группа лиц, организация), пользующееся услугами ИС для получения информации или решения других задач.
 7.13 персональные данные* [TC26] [Федеральный закон No 152-ФЗ (статья 3)] - любая информация, относящаяся к прямо или косвенно определенному или определяемому физическому лицу (субъекту персональных данных).
 7.14 регистрируемые действия пользователя* [TC26] - действия пользователя, информация о которых может быть внесена в реестр согласно политикам и процедурам ИС.
-7.15 уполномоченный пользователь ИС* [TC26]  
-7.16 пользователь-регистратор ИС* [TC26] 
-7.17 пользователь-наблюдатель ИС* [TC26] 
-7.18 пользователь-контролер ИС* [TC26] 
-7.19 пользователь-валидатор ИС* [TC26] 
-7.20 ресурс пользователя-регистратора ИС* [TC26] 
-7.21 chaincode /чейнкод* [TC26] 
+7.15 уполномоченный пользователь ИС* [TC26] - пользователь ИС, который в соответствии с политиками и процедурами ИС может осуществлять хотя бы одно из следующих действий с реестром: чтение, проверка, подтверждение, изменение.
+7.16 пользователь-регистратор ИС* [TC26] - уполномоченный пользователь ИС, который в соответствии с политиками и процедурами ИС может производить внесение информации в реестр. Примечание: при PoW - «майнер».
+7.17 пользователь-наблюдатель ИС* [TC26] - уполномоченный пользователь ИС, который в соответствии с политиками и процедурами ИС может осуществлять чтение реестра.
+7.18 пользователь-контролер ИС* [TC26] - уполномоченный пользователь ИС, который в соответствии с политиками и процедурами ИС может осуществлять проверку корректности реестра.
+7.19 пользователь-валидатор ИС* [TC26] - уполномоченный пользователь ИС, который в соответствии с политиками и процедурами ИС может осуществлять подтверждение корректности реестра. Примечание: в зависимости от политик и процедур ИС пользователь может исполнять различные функции. Например, в криптовалюте Биткойн все пользователи, имеющие доступ к блокчейн, являются пользователями-наблюдателями и пользователями-контролерами, майнеры являются пользователями-валидаторами, майнер, создавший блок, - пользователем-регистратором.
+7.20 ресурс пользователя-регистратора ИС* [TC26] - количественная характеристика пользователя-регистратора ИС, зависящая от используемой в ИС процедуры консенсуса. Примечание: в ИС, использующих процедуру консенсуса с доказательством работы, под ресурсом пользователя-регистратора ИС понимается вычислительная мощность, выраженная в количестве решений некоторой задачи с заданным уровнем вычислительной сложности в единицу времени. В ИС, использующих процедуру консенсуса с доказательством владения – количество условных единиц, которыми в заданный момент времени может распоряжаться пользователь-регистратор.
+7.21 chaincode /чейнкод* [TC26] - см. "умный контракт" (smart-contract).
 8 confirmed / confirmed transaction(s) - [307] 
 [NISTIR] state of a transaction or block when consensus has been reached about its status of inclusion into the blockchain.
 9 consensus - 
@@ -173,6 +173,8 @@ Hashing* [NISTIR]
 56 private distributed ledger system
 57 private user distributed ledger system
 58 private key (public key cryptography [NISTIR])
+[ME] the secret number that allows Ethereum users to prove ownership of an account or contracts, by producing a digital signature (see public key, address, ECDSA).
+[MB] the secret number that unlocks bitcoin sent to the corresponding address. A secret key looks like the following: 5J76sF8L5jTtzE96r66Sf8cka9y44wdpJjMwCxR3tzLh3ibVPxh
 58.2 proof of stake consensus model* [NISTIR] / 
 процедура прихода к консенсусу с доказательством доли* [TC26]
 58.3 proof of work consensus model* [NISTIR] / 
@@ -181,13 +183,17 @@ Hashing* [NISTIR]
 58.5 процедура прихода к консенсусу на основе византийского соглашения* [TC26]
 59 public distributed ledger system
 60 public user distributed ledger system
-61 public key
+61 public key 
+61.2 public key cryptography* [NISTIR] - 
 62 record(s)
 63 reward system incentive mechanism (reward system [NISTIR])
 63.2 round robin consensus model* [NISTIR]
 64 shared ledger
 65 sidechain
-66 smart contract
+66 smart contract - [307]
+[TC26] совокупность условий и последовательность действий, описанные в соответствии с политиками и процедурами ИС. Выполнение всех оговоренных условий, зависящее от конкретного состояния (состояний) ИС (в том числе, в результате проверки внешних по отношению к ИС условий), влечет автоматическое выполнение заранее определенной последовательности действий. Выполнение указанной последовательности действий, в свою очередь, также ведет к изменению состояния ИС.
+[ME] a program which executes on the Ethereum’s computing infrastructure.
+66.2 secret key* [ME], [MB] - see "private key".
 67 soft fork
 68 subchain
 68.2 tamper evident * [NISTIR]
@@ -199,7 +205,9 @@ Hashing* [NISTIR]
 71.2 security token*
 71.3 utility token*
 72 transaction(s) - [307] 
-[MB] In simple terms, a transfer of bitcoin from one address to another. More precisely, a transaction is a signed data structure expressing a transfer of value. Transactions are transmitted over the bitcoin network, collected by miners, and included into blocks, made permanent on the blockchain.
+[TC26] [на основе ГОСТ Р 55681-2013 / ISO/TR 26122:2008 (пункт 3.5)] наименьший элемент взаимодействия, который представляет собой обмен информацией между двумя или более пользователями и/или ИС. Примечание: транзакции могут быть как записаны, так и не записаны в реестр. Транзакцию, не записанную в реестр, будем называть неподтвержденной, а записанную – подтвержденной.
+[ME] data committed to the Ethereum Blockchain signed by an originating account, targeting a specific address. The transaction contains metadata such as the gas limit for the transaction.
+[MB] in simple terms, a transfer of bitcoin from one address to another. More precisely, a transaction is a signed data structure expressing a transfer of value. Transactions are transmitted over the bitcoin network, collected by miners, and included into blocks, made permanent on the blockchain.
 72.2 transaction fee* [NISTIR]
 72.3 turing complete* [NISTIR]
 72.4 неподтвержденная транзакция* [TC26]
