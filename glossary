@@ -80,49 +80,49 @@ Also known as a consensus algorithm, consensus mechanism, consensus method.
 11 cryptocurrency -
 [NISTIR] a digital asset/credit/unit within the system, which is cryptographically sent from one blockchain network user to another. In the case of cryptocurrency creation (such as the reward for mining), the publishing node includes a transaction sending the newly created cryptocurrency to one or more blockchain network users.
 These assets are transferred from one user to another by using digital signatures with asymmetric-key pairs.
-11.2 currency*
-11.3 digital currency*
+11.2 currency* - 
+11.3 digital currency* - 
 12 cryptographic hash function - [307]
 [NISTIR] A function that maps a bit string of arbitrary length to a fixed-length bit string. Approved hash functions satisfy the following properties:
 1/ (Preimage resistant) It is computationally infeasible to compute the correct input value given some output value (the hash function is ‘one way’).
 2/ (Second preimage resistant) One cannot find an input that hashes to a specific output.
 3/ (Collision resistant) It is computationally infeasible to find any two distinct inputs that map to the same output.
 See the NIST SP 800-175B Guideline for Using Cryptographic Standards in the Federal Government: Cryptographic Mechanisms, http://dx.doi.org/10.6028/NIST.SP.800-175B.
-12.2 function*
+12.2 function* - 
 12.3 hash function*
 13 cryptographic link
 13.2 cryptographic nonce* [NISTIR] - an arbitrary number that is used once. 
-14 cryptography
-15 decentralized system
+14 cryptography - 
+15 decentralized system - 
 15.2 decentralized network* [NISTIR] - a network configuration where there are multiple authorities that serve as a centralized hub for a subsection of participants. Since some participants are behind a centralized hub, the loss of that hub will prevent those participants from communicating.
 16 digital asset - [307]
 [NISTIR] - any asset that is purely digital, or is a digital representation of a physical asset.
-16.2 asset*
-16.3 digest* [NISTIR] - see "hash digest".
-17 digital signature - [307]
+16.2 digest* [NISTIR] - see "hash digest".
+17 digital signature - [307] data which, when appended to a digital document, enable the user of the document to authenticate its origin and integrity [ISO 14641:2018, 3.17].
 [NISTIR] a cryptographic technique that utilizes asymmetric-keys to determine authenticity (i.e., users can verify that the message was signed with a private key corresponding to the specified public key), non-repudiation (a user cannot deny having sent a message) and integrity (that the message was not altered during transmission).
-17.2 signature*
-18 distributed application ledger application blockchain application
-19 distributed ledger(s)
-20 distributed ledger technology(ies)
-21 distributed ledger network
-22 distributed ledger system(s)
-22.2 system(s)*
-23 distributed ledger technology platform
-23.2 platform* 
-24 distributed system 
+17.2 signature* - 
+18 distributed application ledger application blockchain application (DApp) - [307] application that runs on a distributed system.
+19 distributed ledger - [307] ledger that is shared and synchronized in a distributed manner.
+20 distributed ledger technology (abbreviated as DLT) - [307] technology that enables the operation and use of distributed ledgers. 
+21 distributed ledger network - [307] network within a distributed ledger system.
+22 distributed ledger system - [307] system that implements a distributed ledger.
+22.2 system(s)* - 
+23 distributed ledger technology platform - 
+23.2 platform* -
+24 distributed system -  
 24.2 distributed network* [NISTIR] - a network configuration where every participant can communicate with one another without going through a centralized point. Since there are multiple pathways for communication, the loss of any participant will not prevent communication.
 This is also known as a "peer-to-peer network".
-25 DLT account 
-26 DLT user(s)
-26.2 user(s)*
-27 double spending
+25 distributed ledger technology (DLT) account - [307] representation of an entity (3.30) whose data is recorded on a distributed ledger system.
+26 distributed ledger technology (DLT) user - [307] entity that uses services provided by a distributed ledger system.
+26.2 user* - 
+26.3 
+27 double spending - 
 27.2 double spend (problem)* [NISTIR] - transacting with the same set of digital assets more than once. This is a problem which has plagued many digital money systems, and a problem that most blockchain networks are designed to prevent.
 27.3 double spend (attack)* [NISTIR] - an attack where a blockchain network user attempts to explicitly double spend a digital asset.
-28 entity
+28 entity - [307] item inside or outside an information and communication technology system, such as a person, an organization, a device, a subsystem, or a group of such items that has recognizably distinct existence.
 29 fault tolerance
-30 fork
-31 genesis block
+30 fork - [307] creation of different version of a distributed ledger originating from a common starting point with a single history.
+31 genesis block - [307] the first (nature) block in a blockchain.
 32 hard fork
 32.2 Hash chain* [NISTIR]
 32.3 Hash digest* [NISTIR]
@@ -142,6 +142,7 @@ Hashing* [NISTIR]
 36.9 Key Derivation Function (KDF)* [ME] - also known as a password stretching algorithm, it is used by keystore format which to protect against brute-force, dictionary, or rainbow table attacks against the passphrase encryption. It repeatedly hashes the passphrase.
 36.10 keystore file* [ME] - a JSON-encoded file that contains a single (randomly generated) private key, encrypted by a passphrase for extra security.
 36.11 KYC* [MB] - know your customer (KYC) is the process of a business, identifying and verifying the identity of its clients. The term is also used to refer to the bank regulation which governs these activities.
+[12812] process to verify the identity of a customer in order to prevent financial crime, money laundering and terrorism financing ISO 12812-1:2017(en).
 37 leaf node
 38 ledger
 38.1 тип реестра*
