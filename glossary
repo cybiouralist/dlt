@@ -123,36 +123,52 @@ Note : In a decentralized system, the distribution of control among persons or o
 17.2 signature* - 
 18 decentralized application DApp [ISO 22739:2020] - application that runs on a decentralized system.
 18.2 distributed application DApp [307] - application that runs on a distributed system.
-19 distributed ledger - [307] ledger that is shared and synchronized in a distributed manner.
-20 distributed ledger technology (abbreviated as DLT) - [307] technology that enables the operation and use of distributed ledgers. 
-21 distributed ledger network - [307] network within a distributed ledger system.
-22 distributed ledger system - [307] system that implements a distributed ledger.
-22.2 system(s)* - 
-23 distributed ledger technology platform - 
-23.2 platform* -
-24 distributed system -  
-24.2 distributed network* [NISTIR] - a network configuration where every participant can communicate with one another without going through a centralized point. Since there are multiple pathways for communication, the loss of any participant will not prevent communication.
+19 distributed ledger [ISO 22739:2020] - ledger that is shared across a set of DLT nodes and synchronized between the DLT nodes using a consensus mechanism.
+Note: A distributed ledger is designed to be tamper resistant, append-only and immutable containing confirmed and validated transactions.
+[307] ledger that is shared and synchronized in a distributed manner.
+20 distributed ledger technology (abbreviated as DLT) [ISO 22739:2020] - technology that enables the operation and use of distributed ledgers. 
+21 distributed ledger technology (DLT) account [ISO 22739:2020] - representation of an entity participating in a transaction.
+Note: A smart contract, digital asset, or one or more private keys, for example, can be associated with a DLT account.
+[307] representation of an entity whose data is recorded on a distributed ledger system.
+21.2 DLT address [ISO 22739:2020] - distributed ledger technology address value that identifies a DLT account participating in a transaction.
+21.3 DLT network [ISO 22739:2020] - network of DLT nodes which make up a DLT system.
+21.3.2 distributed ledger network [307] - network within a distributed ledger system.
+21.3.3 distributed network* [NISTIR] - a network configuration where every participant can communicate with one another without going through a centralized point. Since there are multiple pathways for communication, the loss of any participant will not prevent communication.
 This is also known as a "peer-to-peer network".
-25 distributed ledger technology (DLT) account - [307] representation of an entity (3.30) whose data is recorded on a distributed ledger system.
-26 distributed ledger technology (DLT) user - [307] entity that uses services provided by a distributed ledger system.
-26.2 user* - 
-26.3 
-27 double spending - 
-27.2 double spend (problem)* [NISTIR] - transacting with the same set of digital assets more than once. This is a problem which has plagued many digital money systems, and a problem that most blockchain networks are designed to prevent.
-27.3 double spend (attack)* [NISTIR] - an attack where a blockchain network user attempts to explicitly double spend a digital asset.
-28 entity - [307] item inside or outside an information and communication technology system, such as a person, an organization, a device, a subsystem, or a group of such items that has recognizably distinct existence.
-29 fault tolerance
-30 fork - [307] creation of different version of a distributed ledger originating from a common starting point with a single history.
-31 genesis block - [307] the first (nature) block in a blockchain.
-32 hard fork
-32.2 Hash chain* [NISTIR]
-32.3 Hash digest* [NISTIR]
-32.4 Hash value* [NISTIR]
+21.4 DLT node [ISO 22739:2020] - node <distributed ledger technology> device or process that participates in a network and stores a complete or partial replica of the ledger records.
+21.5 DLT oracle [ISO 22739:2020] - service that updates a distributed ledger using data from outside of a DLT system.
+Note: DLT oracles are useful for smart contracts that cannot access sources of data external to the DLT system.
+21.6 DLT platform [ISO 22739:2020] - set of processing, storage and communication entities which together provide the capabilities of the DLT system on each DLT node.
+21.6.2 platform* -
+21.7 distributed ledger technology (DLT) user [ISO 22739:2020] - entity that uses services provided by a DLT system.
+[307] entity that uses services provided by a distributed ledger system.
+21.7.2 user* - 
+21.8 DLT system [ISO 22739:2020] - system that implements a distributed ledger.
+21.8.2 system(s)* -
+22 distributed system [ISO 22739:2020] - system in which components located on networked computers communicate and coordinate their actions by interacting with each other.
+23 double spending [ISO 22739:2020] - failure of a DLT platform where the control of a token or crypto-asset is incorrectly transferred more than once.
+Note: Double-spending is most often associated with cryptocurrency.
+23.2 double spend (problem)* [NISTIR] - transacting with the same set of digital assets more than once. This is a problem which has plagued many digital money systems, and a problem that most blockchain networks are designed to prevent.
+23.3 double spend (attack)* [NISTIR] - an attack where a blockchain network user attempts to explicitly double spend a digital asset.
+24 entity [ISO 22739:2020] - item inside or outside an information and communication technology system, such as a person, an organization, a device, a subsystem, or a group of such items that has recognizably distinct existence.
+25 failure [ISO 22739:2020] - loss of ability to perform as required.
+25.2 fault tolerance [ISO 22739:2020] - ability of a functional unit to continue to perform a required function in the presence of faults or errors.
+26 genesis block - [307] the first (nature) block in a blockchain.
+27 hard fork [ISO 22739:2020] - change to a DLT platform in which new ledger records or blocks created by the DLT nodes using the new version of the DLT platform are not accepted as valid by DLT nodes using old versions of the DLT platform.
+Note 1: If not adopted by all DLT nodes, a hard fork can result in a ledger split.
+Note 2: In some contexts, the terms "hard fork" and " fork" are sometimes used for a ledger split that results from a hard fork of a DLT platform.
+27.2 fork - [307] creation of different version of a distributed ledger originating from a common starting point with a single history.
+28 hash value [ISO 22739:2020] - string of bits which is the output of a cryptographic hash function.
+28.2 Hash chain* [NISTIR]
+28.3 Hash digest* [NISTIR]
+28.4 Hash value* [NISTIR]
 Hashing* [NISTIR]
-33 hash value
-34 hash rate (of a processor)
-35 immutability (Immutable [NISTIR])
-36 interoperability
+28.5 hash rate (of a processor)
+29 immutability [ISO 22739:2020] - property wherein ledger records cannot be modified or removed once added to a distributed ledger.
+Note: Where appropriate, immutability also presumes keeping intact the order of ledger records and the links between the ledger records.
+(Immutable [NISTIR])
+30 interoperability [ISO 22739:2020] - ability of two or more systems or applications to exchange information and to mutually use the information that has been exchanged.
+
 36.2 incentive mechanism* [NISTIR]
 36.3 information / информация* [TC26] [Федеральный закон No 149-ФЗ (статья 2)]
 36.4 information system / информационная система* [TC26] ([на основе ГОСТ ISO/TS 22220-2013 (п 3.4)] 
