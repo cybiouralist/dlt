@@ -108,6 +108,7 @@ Note: Computational feasibility depends on the specific security requirements an
 See the NIST SP 800-175B Guideline for Using Cryptographic Standards in the Federal Government: Cryptographic Mechanisms, http://dx.doi.org/10.6028/NIST.SP.800-175B.
 12.2 function* - 
 12.3 hash function*
+12.4 Keccak256* [ME] - cryptographic hash function used in Ethereum. Keccak256 was standardised to SHA-3.
 13 cryptographic link [ISO 22739:2020] - reference, constructed using a cryptographic hash function technique, that points to data
 Note: A cryptographic link is used in the block header to reference the previous block in order to create the append-only, sequential chain that forms a blockchain.
 13.2 cryptographic nonce* [NISTIR] - an arbitrary number that is used once. 
@@ -158,67 +159,72 @@ Note: Double-spending is most often associated with cryptocurrency.
 Note 1: If not adopted by all DLT nodes, a hard fork can result in a ledger split.
 Note 2: In some contexts, the terms "hard fork" and " fork" are sometimes used for a ledger split that results from a hard fork of a DLT platform.
 27.2 fork - [307] creation of different version of a distributed ledger originating from a common starting point with a single history.
+27.3 ledger split [ISO 22739:2020] - fork creation of two or more different versions of a distributed ledger (3.22) originating from a common starting point with a single history.
 28 hash value [ISO 22739:2020] - string of bits which is the output of a cryptographic hash function.
 28.2 Hash chain* [NISTIR]
 28.3 Hash digest* [NISTIR]
 28.4 Hash value* [NISTIR]
-Hashing* [NISTIR]
-28.5 hash rate (of a processor)
+28.5 hashing* [NISTIR]
+28.6 hash rate (of a processor)
 29 immutability [ISO 22739:2020] - property wherein ledger records cannot be modified or removed once added to a distributed ledger.
 Note: Where appropriate, immutability also presumes keeping intact the order of ledger records and the links between the ledger records.
 (Immutable [NISTIR])
 30 interoperability [ISO 22739:2020] - ability of two or more systems or applications to exchange information and to mutually use the information that has been exchanged.
-
-36.2 incentive mechanism* [NISTIR]
-36.3 information / информация* [TC26] [Федеральный закон No 149-ФЗ (статья 2)]
-36.4 information system / информационная система* [TC26] ([на основе ГОСТ ISO/TS 22220-2013 (п 3.4)] 
-36.5 разрешенные механизмы ИС* (конфигурация ИС)* [TC26]
-36.6 external information / внешняя информация* [TC26]
-36.7 internal information / внутренняя информация* [TC26]
-36.8 Keccak256* [ME] - cryptographic hash function used in Ethereum. Keccak256 was standardised to SHA-3.
-36.9 Key Derivation Function (KDF)* [ME] - also known as a password stretching algorithm, it is used by keystore format which to protect against brute-force, dictionary, or rainbow table attacks against the passphrase encryption. It repeatedly hashes the passphrase.
-36.10 keystore file* [ME] - a JSON-encoded file that contains a single (randomly generated) private key, encrypted by a passphrase for extra security.
-36.11 KYC* [MB] - know your customer (KYC) is the process of a business, identifying and verifying the identity of its clients. The term is also used to refer to the bank regulation which governs these activities.
+31 incentive mechanism* [NISTIR]
+32 information / информация* [TC26] [Федеральный закон No 149-ФЗ (статья 2)]
+32.2 external information / внешняя информация* [TC26]
+32.3 internal information / внутренняя информация* [TC26]
+33 information system / информационная система* [TC26] ([на основе ГОСТ ISO/TS 22220-2013 (п 3.4)] 
+33.2 разрешенные механизмы ИС* (конфигурация ИС)* [TC26]
+34 KYC* [MB] - know your customer (KYC) is the process of a business, identifying and verifying the identity of its clients. The term is also used to refer to the bank regulation which governs these activities.
 [12812] process to verify the identity of a customer in order to prevent financial crime, money laundering and terrorism financing ISO 12812-1:2017(en).
-37 leaf node
-38 ledger
-38.1 тип реестра*
-38.2 реестр статический* [TC26]
-38.3 реестр динамический* [TC26]
-38.4 реестр изменяемый* [TC26]
-38.5 реестр реплицированный* [TC26][на основе ГОСТ 34.321-96 (пункт 2.39)]
-38.6 реестр распределенный* [TC26][на основе ГОСТ 34.321-96 (пункт 2.39)]
-38.7 ИС с реестром публичная (общедоступная)* [TC26]
-38.8 ИС с реестром с ограничениями на просмотр* [TC26]
-38.9 ИС с реестром совместная* [TC26]
-38.10 ИС с реестром с ограничениями на добавление информации* [TC26]
-38.11 ИС с реестром анонимная (псевдонимная)* [TC26]
-38.12 ИС с реестром приватная* [TC26]
-38.13 ИС с реестром конфиденциальная* [TC26]
-38.14 ИС с реестром иерархическая* [TC26]
-38.15 обособленный канал ИС с реестром (channel)* [TC26]
-39 ledger record
-40 Merkle tree
-41 Merkle root
-42 miner
-43 mining
-44 node(s)
-44.2 full node* [NISTIR]
-44.3 lightweight node* [NISTIR]
-44.4 publishing node* [NISTIR]
-45 nonce
-46 off-chain
-47 off-ledger
-48 on-chain
-49 off-ledger
-50 oracle DLT oracle
-51 orphan block
-52.2 nonce Orphan block* [NISTIR]
-52 peer-to-peer
-52.3 ending transaction pool* [NISTIR]
-53 permissioned
-53.2 permissionless
-53.3 permissions
+35 ledger [ISO 22739:2020] - information store that keeps records of transactions that are intended to be final, definitive and immutable.
+35.1 тип реестра*
+35.2 реестр статический* [TC26]
+35.3 реестр динамический* [TC26]
+35.4 реестр изменяемый* [TC26]
+35.5 реестр реплицированный* [TC26][на основе ГОСТ 34.321-96 (пункт 2.39)]
+35.6 реестр распределенный* [TC26][на основе ГОСТ 34.321-96 (пункт 2.39)]
+35.7 ИС с реестром публичная (общедоступная)* [TC26]
+35.8 ИС с реестром с ограничениями на просмотр* [TC26]
+35.9 ИС с реестром совместная* [TC26]
+35.10 ИС с реестром с ограничениями на добавление информации* [TC26]
+35.11 ИС с реестром анонимная (псевдонимная)* [TC26]
+35.12 ИС с реестром приватная* [TC26]
+35.13 ИС с реестром конфиденциальная* [TC26]
+35.14 ИС с реестром иерархическая* [TC26]
+35.15 обособленный канал ИС с реестром (channel)* [TC26]
+36 ledger record [ISO 22739:2020] - record containing transaction records, hash values of transaction records, or references to transaction records recorded on a distributed ledger.
+Note: A reference can be implemented as a cryptographic link.
+(27.3) ledger split [ISO 22739:2020]
+37 Merkle tree [ISO 22739:2020] - tree data structure in which every leaf node is labelled with the hash value of a data element and every non-leaf node is labelled with the hash value of the labels of its child nodes.
+38 Merkle root [ISO 22739:2020] - root node of a Merkle tree.
+39 miner [ISO 22739:2020] - DLT node which engages in mining.
+40 mining [ISO 22739:2020] - activity, in some consensus mechanisms, that creates and validates blocks or validates ledger records.
+Note: Participation in mining is often incentivized by block rewards and transaction fees.
+41 node(s) [ISO 22739:2020] - <organization of data> elementary component from which a data structure is built.
+41.2 leaf node [ISO 22739:2020] - node that has no child nodes.
+41.3 full node* [NISTIR] 
+41.4 lightweight node* [NISTIR] 
+41.5 publishing node* [NISTIR] 
+42 nonce [ISO 22739:2020] - number or bit string used once in a set of cryptographic operations
+Note: A nonce is often random or pseudo-random. It is commonly used to guard against replay attacks, where a message is captured and re-sent by a malicious actor. In some blockchain systems it is used to modulate mining during the generation of a new block and is stored in the block header.
+
+43 off-chain [ISO 22739:2020] -
+44 off-ledger [ISO 22739:2020] -
+45 on-chain [ISO 22739:2020] -
+46 on-ledger [ISO 22739:2020] -
+47 oracle (DLT oracle) 
+48 orphan block
+48.2 nonce Orphan block* [NISTIR]
+49 password*
+49.2 Key Derivation Function (KDF)* [ME] - also known as a password stretching algorithm, it is used by keystore format which to protect against brute-force, dictionary, or rainbow table attacks against the passphrase encryption. It repeatedly hashes the passphrase.
+
+50 peer-to-peer [ISO 22739:2020] - 
+51 permissioned
+51.2 permissionless
+51.3 permissions
+
 54 permissioned distributed ledger system
 55 permissionless distributed ledger system
 56 private distributed ledger system
@@ -226,12 +232,13 @@ Note: Where appropriate, immutability also presumes keeping intact the order of 
 58 private key (public key cryptography [NISTIR])
 [ME] the secret number that allows Ethereum users to prove ownership of an account or contracts, by producing a digital signature (see public key, address, ECDSA).
 [MB] the secret number that unlocks bitcoin sent to the corresponding address. A secret key looks like the following: 5J76sF8L5jTtzE96r66Sf8cka9y44wdpJjMwCxR3tzLh3ibVPxh
-58.2 proof of stake consensus model* [NISTIR] / 
+58.2 keystore file* [ME] - a JSON-encoded file that contains a single (randomly generated) private key, encrypted by a passphrase for extra security.
+58.3 proof of stake consensus model* [NISTIR] / 
 процедура прихода к консенсусу с доказательством доли* [TC26]
-58.3 proof of work consensus model* [NISTIR] / 
+58.4 proof of work consensus model* [NISTIR] / 
 процедура прихода к консенсусу с доказательством работы* [TC26]
-58.4 proof of authority / процедура прихода к консенсусу с доказательством права* [TC26]
-58.5 процедура прихода к консенсусу на основе византийского соглашения* [TC26]
+58.5 proof of authority / процедура прихода к консенсусу с доказательством права* [TC26]
+58.6 процедура прихода к консенсусу на основе византийского соглашения* [TC26]
 59 public distributed ledger system
 60 public user distributed ledger system
 61 public key 
@@ -265,6 +272,8 @@ Note: Where appropriate, immutability also presumes keeping intact the order of 
 72.5 подтвержденной транзакция* [TC26]
 72.6 блок транзакций* [TC26]
 72.7 transaction pool* [MB] - an unordered collection of transactions that are not in blocks in the main chain, but for which we have input transactions.
+72.7.2 ending transaction pool* [NISTIR]
+
 72.8 turing completeness* [MB] - a program language is called "Turing complete" if it can run any program that a Turing machine can run, given enough time and memory.
 72.9 Turing Complete* [ME] - in computability theory, a system of data-manipulation rules (such as a computer’s instruction set, a programming language, or a cellular automaton) is said to be Turing complete or computationally universal if it can be used to simulate any Turing machine. The concept is named after English mathematician and computer scientist Alan Turing.
 73 validated
@@ -278,8 +287,8 @@ Note: Where appropriate, immutability also presumes keeping intact the order of 
 75.5 Hyperledger Fabric / Хайперледжер Фабрик* [TC26]
 <end>
 
-* terms opened to disscussion / термины для обсуждения (на включение в терминологию DLT)
-& new terms from the [NISTIR]; [TC26]; [ME]; [MB]; etc / новые термины из [NISTIR]; [TC26]; [ME]; [MB] и др, которых нет в [307]
+* terms - words opened to disscussion / термины - слова для обсуждения (и включения в словарь "DLT & blockhain words")
+& new terms from the [NISTIR]; [TC26]; [ME]; [MB]; etc / новые термины из [NISTIR]; [TC26]; [ME]; [MB] и др, которых нет в [ISO 22739:2020]; [307]
 
 [2] [NISTIR]
 Address
@@ -473,4 +482,4 @@ https://docs.google.com/spreadsheets/d/1ls5RxhQ9IPPpqZttqSxkINXj1REOJ1QqPsGukTu4
 [13] [ISO/TS 19299:2015]
 [14] https://docs.google.com/document/d/159G_9kZYsb4D2joLd5RlufXYZ9PeBzNZA2Nv0rWYgOI/edit?usp=sharing
 
-Creative Commons Attribution licence (CC-BY) 2018-2019 (c) A.Vlasov
+Creative Commons Attribution licence (CC-BY) 2018-2020 (c) A.Vlasov
