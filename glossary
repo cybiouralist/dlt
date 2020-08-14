@@ -90,7 +90,8 @@ Note 2: The details regarding consensus differ among DLT designs and this is a d
 10 consensus mechanism [ISO 22739:2020] - rules and procedures by which consensus is reached.
 10.1 consensus model* [NISTIR] - a process to achieve agreement within a distributed system on the valid state.
 Also known as a consensus algorithm, consensus mechanism, consensus method.
-10.2 процедура прихода к консенсусу* [TC26]
+10.2 процедура прихода к консенсусу* [TC26] 
+10.3 round robin consensus model* [NISTIR] 
 11 cryptocurrency [ISO 22739:2020] - crypto-asset designed to work as a medium of value exchange.
 Note 1: Cryptocurrency involves the use of decentralized control and cryptography to secure transactions, control the creation of additional assets, and verify the transfer of assets.
 [NISTIR] a digital asset/credit/unit within the system, which is cryptographically sent from one blockchain network user to another. In the case of cryptocurrency creation (such as the reward for mining), the publishing node includes a transaction sending the newly created cryptocurrency to one or more blockchain network users.
@@ -209,64 +210,73 @@ Note: Participation in mining is often incentivized by block rewards and transac
 41.5 publishing node* [NISTIR] 
 42 nonce [ISO 22739:2020] - number or bit string used once in a set of cryptographic operations
 Note: A nonce is often random or pseudo-random. It is commonly used to guard against replay attacks, where a message is captured and re-sent by a malicious actor. In some blockchain systems it is used to modulate mining during the generation of a new block and is stored in the block header.
-
-43 off-chain [ISO 22739:2020] -
-44 off-ledger [ISO 22739:2020] -
-45 on-chain [ISO 22739:2020] -
-46 on-ledger [ISO 22739:2020] -
-47 oracle (DLT oracle) 
-48 orphan block
+43 off-chain [ISO 22739:2020] - related to a blockchain system, but located, performed, or run outside that blockchain system.
+44 off-ledger [ISO 22739:2020] - related to a DLT system, but located, performed, or run outside that DLT system.
+45 on-chain [ISO 22739:2020] - located, performed, or run inside a blockchain system.
+46 on-ledger [ISO 22739:2020] - located, performed, or run inside a DLT system.
+47 oracle (DLT oracle)* 
+48 orphan block*
 48.2 nonce Orphan block* [NISTIR]
 49 password*
 49.2 Key Derivation Function (KDF)* [ME] - also known as a password stretching algorithm, it is used by keystore format which to protect against brute-force, dictionary, or rainbow table attacks against the passphrase encryption. It repeatedly hashes the passphrase.
-
-50 peer-to-peer [ISO 22739:2020] - 
-51 permissioned
-51.2 permissionless
-51.3 permissions
-
-54 permissioned distributed ledger system
-55 permissionless distributed ledger system
-56 private distributed ledger system
-57 private user distributed ledger system
-58 private key (public key cryptography [NISTIR])
+50 peer-to-peer [ISO 22739:2020] - relating to, using, or being a network of equal peers that share information and resources with each other directly without relying on a central entity.
+51 permissioned [ISO 22739:2020] - requiring authorization to perform a particular activity or activities.
+51.2 permissionless [ISO 22739:2020] - not requiring authorization to perform any particular activity.
+51.3 permissions*
+52 permissioned DLT system (permissioned distributed ledger system) [ISO 22739:2020] - permissioned distributed ledger technology system DLT system in which permissions are required.
+53 permissionless DLT system (permissionless distributed ledger system) [ISO 22739:2020] - permissionless distributed ledger technology system DLT system that is permissionless.
+54 private DLT system (private distributed ledger system) [ISO 22739:2020] - private distributed ledger technology system DLT system that is accessible for use only to a limited group of DLT users.
+Note: Public and private categories apply to DLT users, and permissioned and permissionless categories apply to DLT users and those entities that administer or operate the DLT system.
+55 private user distributed ledger system*
+56 private key [ISO 22739:2020], [ISO/IEC 9798-1:2010] - key of an entity's asymmetric key pair that is kept secret and which should only be used by that entity.
 [ME] the secret number that allows Ethereum users to prove ownership of an account or contracts, by producing a digital signature (see public key, address, ECDSA).
 [MB] the secret number that unlocks bitcoin sent to the corresponding address. A secret key looks like the following: 5J76sF8L5jTtzE96r66Sf8cka9y44wdpJjMwCxR3tzLh3ibVPxh
-58.2 keystore file* [ME] - a JSON-encoded file that contains a single (randomly generated) private key, encrypted by a passphrase for extra security.
-58.3 proof of stake consensus model* [NISTIR] / 
+56.2 (public key cryptography [NISTIR])
+56.3 keystore file* [ME] - a JSON-encoded file that contains a single (randomly generated) private key, encrypted by a passphrase for extra security.
+56.4 proof of stake consensus model* [NISTIR] / 
 процедура прихода к консенсусу с доказательством доли* [TC26]
-58.4 proof of work consensus model* [NISTIR] / 
+56.5 proof of work consensus model* [NISTIR] / 
 процедура прихода к консенсусу с доказательством работы* [TC26]
-58.5 proof of authority / процедура прихода к консенсусу с доказательством права* [TC26]
-58.6 процедура прихода к консенсусу на основе византийского соглашения* [TC26]
-59 public distributed ledger system
-60 public user distributed ledger system
-61 public key 
-61.2 public key cryptography* [NISTIR] - 
-62 record(s)
-63 reward system incentive mechanism (reward system [NISTIR])
-63.2 round robin consensus model* [NISTIR]
-64 shared ledger
-65 sidechain
-66 smart contract - [307]
+56.6 proof of authority / процедура прихода к консенсусу с доказательством права* [TC26]
+56.7 процедура прихода к консенсусу на основе византийского соглашения* [TC26]
+56.8 secret key* [ME], [MB] - see "private key".
+57 public DLT system (public distributed ledger system) [ISO 22739:2020] - public distributed ledger technology system DLT system which is accessible to the public for use.
+58 public user distributed ledger system*
+59 public key [ISO 22739:2020], [ISO/IEC 9798-1:2010] - key of an entity's asymmetric key pair which can be made public.
+59.2 public key cryptography [ISO 22739:2020] - cryptography in which a public key and a corresponding private key are used for encryption and decryption, or are used for verifying digital signatures and digitally signing, respectively.
+[NISTIR] 
+60 record(s) [ISO 22739:2020], [ISO 15489-1:2016] - information created, received and maintained as evidence and as an asset by an organization or person, in pursuit of legal obligations or in the transaction of business.
+Note: This term applies to information in any medium, form or format.
+61 reward system incentive mechanism [ISO 22739:2020] - method of offering reward for some activities concerned with the operation of a DLT system.
+Note: An example of a reward is a block reward.
+(reward system [NISTIR]) -
+62 root node [ISO 22739:2020] - node that has no parent node.
+63 shared ledger [ISO 22739:2020] - distributed ledger in which the content of ledger records is accessible by multiple entities.
+64 sidechain [ISO 22739:2020] - blockchain system that interoperates with a separate associated blockchain system to perform a specific function in relation to the associated blockchain system.
+Note: By convention the original chain is normally referred to as the "main chain", while any additional blockchains which allow DLT users to transact on the main chain are referred to as "sidechains”.
+65 smart contract  [ISO 22739:2020] - computer program stored in a DLT system wherein the outcome of any execution of the program is recorded on the distributed ledger.
+Note: A smart contract can represent terms in a contract in law and create a legally enforceable obligation under the legislation of an applicable jurisdiction.
 [TC26] совокупность условий и последовательность действий, описанные в соответствии с политиками и процедурами ИС. Выполнение всех оговоренных условий, зависящее от конкретного состояния (состояний) ИС (в том числе, в результате проверки внешних по отношению к ИС условий), влечет автоматическое выполнение заранее определенной последовательности действий. Выполнение указанной последовательности действий, в свою очередь, также ведет к изменению состояния ИС.
 [ME] a program which executes on the Ethereum’s computing infrastructure.
-66.2 secret key* [ME], [MB] - see "private key".
-67 soft fork
-68 subchain
-68.2 tamper evident * [NISTIR]
-68.3 tamper resistant* [NISTIR]
-68.4 testnet* - [ME] a test network (testnet for short) is used to simulate the behavior of the main Ethereum network. 
-69 time stamp
+66 soft fork [ISO 22739:2020] - change to a DLT platform that is not a hard fork and in which some records or blocks created by the DLT nodes using the old version of the DLT platform are not accepted as valid by DLT nodes using new versions of the DLT platform.
+66.2 prune [ISO 22739:2020] - produce a smaller replica of a distributed ledger by removing all transaction records meeting specified criteria while ensuring that those transactions can be restored with integrity if needed.
+67 subchain [ISO 22739:2020] - logically separate chain that can form part of a blockchain system.
+Note: A subchain allows for data isolation and confidentiality.
+67 tamper evident * [NISTIR] - 
+67.2 tamper resistant* [NISTIR] -
+68 testnet* [ME] - a test network (testnet for short) is used to simulate the behavior of the main Ethereum network. 
+69 timestamp [ISO 22739:2020], [ISO/IEC 18014-1:2008] - time variant parameter which denotes a point in time with respect to a common time reference.
 70 timing service
-71 token
+71 token [ISO 22739:2020] - digital asset that represents a collection of entitlements.
 71.2 security token*
 71.3 utility token*
-72 transaction(s) - [307] 
+72 transaction(s) [ISO 22739:2020] - smallest unit of a work process, which is one or more sequences of actions required to produce an outcome that complies with governing rules.
+Note: Where appropriate, transaction is understood more narrowly, as the smallest unit of a work process related to interactions with distributed ledgers.
 [TC26] [на основе ГОСТ Р 55681-2013 / ISO/TR 26122:2008 (пункт 3.5)] наименьший элемент взаимодействия, который представляет собой обмен информацией между двумя или более пользователями и/или ИС. Примечание: транзакции могут быть как записаны, так и не записаны в реестр. Транзакцию, не записанную в реестр, будем называть неподтвержденной, а записанную – подтвержденной.
 [ME] data committed to the Ethereum Blockchain signed by an originating account, targeting a specific address. The transaction contains metadata such as the gas limit for the transaction.
 [MB] in simple terms, a transfer of bitcoin from one address to another. More precisely, a transaction is a signed data structure expressing a transfer of value. Transactions are transmitted over the bitcoin network, collected by miners, and included into blocks, made permanent on the blockchain.
-72.2 transaction fee* [NISTIR]
+72.2 transaction fee  [ISO 22739:2020] - fee paid to miners or validators for inclusion of a transaction in a distributed ledger.
+[NISTIR]
 72.3 turing complete* [NISTIR]
 72.4 неподтвержденная транзакция* [TC26]
 72.5 подтвержденной транзакция* [TC26]
@@ -460,10 +470,10 @@ Scam
 Shard/sharding
 STO
 Security token - 
-Token - 
+
 
 Appendix:
-A1 Таблица сравнения упоминания терминов / Terms comparative table: 
+A1 Таблица сравнения упоминания терминов / Terms - comparative table: 
 https://docs.google.com/spreadsheets/d/1ls5RxhQ9IPPpqZttqSxkINXj1REOJ1QqPsGukTu4h3Q/edit?usp=sharing
 
 Источники / References: 
@@ -480,6 +490,9 @@ https://docs.google.com/spreadsheets/d/1ls5RxhQ9IPPpqZttqSxkINXj1REOJ1QqPsGukTu4
 [11] [BRCA]
 [12] [OECD] 
 [13] [ISO/TS 19299:2015]
-[14] https://docs.google.com/document/d/159G_9kZYsb4D2joLd5RlufXYZ9PeBzNZA2Nv0rWYgOI/edit?usp=sharing
+[14] [ISO/IEC 9798-1:2010]
+[15] [ISO 15489-1:2016 
+[16] [ISO/IEC 18014-1:2008]
+[17] https://docs.google.com/document/d/159G_9kZYsb4D2joLd5RlufXYZ9PeBzNZA2Nv0rWYgOI/edit?usp=sharing
 
 Creative Commons Attribution licence (CC-BY) 2018-2020 (c) A.Vlasov
