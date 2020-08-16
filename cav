@@ -1,0 +1,81 @@
+wiki CAVs (Connected and Autonomous Vehicles, or driverless cars) & DLT - Vocabulary 
+1 active safety system 
+2 adaptive cruise control (ACC) 
+3 advanced driver assistance system (ADAS) 
+4 automated driving 
+5 automated driving system (ADS) 
+6 automated driving system entity (ADSE) 
+7 automated vehicle (AV) 
+8 automatic emergency braking (AEB) 
+9 automatically commanded steering function (ACSF) 
+10 blind spot monitoring 
+11 cellular vehicle-to-everything (C-V2X) 
+11.2 Cellular V2X (C-V2X)
+12 connected and automated vehicle (CAV) 
+13 connected vehicle (CV) 
+14 cooperative 
+15 corner case 
+16 cross traffic alert (CTA) 
+17 dedicated short range communication (DSRC) 
+18 driver monitoring system (DMS) 
+19 driving automation system (DAS) 
+20 dynamic driving task (DDT) 
+21 edge case 
+22 ego vehicle 
+23 electronic stability control (ESC) 
+24 emergency lane keeping (ELK) 
+25 fallback 
+26 forward collision warning (FCW) 
+27 fully automated vehicle 
+28 green light optimized speed advisory (GLOSA) 
+29 handover 
+30 highly automated road passenger service (HARPS) 
+31 highly automated road passenger service operator 
+32 highly automated vehicle 
+33 intelligent speed adaptation (ISA) 
+34 ITS-G5 
+34.2 > IEEE 802.11-2012 and ANSI/IEEE Std 802.2 
+35 lane centring 
+36 lane departure warning (LDW) 
+37 lane-keeping assist (LKA) 
+38 minimal risk condition (MRC) 
+39 minimal risk manoeuvre (MRM) 
+40 on-board diagnostics (OBD) 
+41 operational design domain (ODD) 
+42 over-the-air (OTA) 
+43 pedestrian detection 
+44 platooning 
+45 real-time kinematics (RTK) 
+46 remote operator 
+47 safety case 
+48 safety driver 
+49 safety of the intended functionality (SOTIF) 
+50 safety operator 
+51 scenario 
+52 sensor fusion 
+53 simulation 
+54 software development kit (SDK) 
+55 telematics 
+56 user-in-charge 
+57 validation 
+58 vehicle 
+59 vehicle control system 
+60 vehicle-to-everything (V2X) 
+61 vehicle-to-grid (V2G) 
+62 vehicle-to-infrastructure (V2I) 
+63 vehicle-to-vehicle (V2V) 
+64 verification 
+65 vulnerable road user 
+
+References:
+[Law Commission / The Scottish Law Commission, Automated Vehicles: Consultation Paper 2 on Passenger Services and Public Transport A joint consultation paper, 2019]
+[Automated and Electric Vehicles Act, 2018] 
+[UNECE/TRANS/WP.29/2017/10] 
+[UNECE/TRANS/WP.1/165, 2018] 
+[IEEE 802.11-2012 and ANSI/IEEE Std 802.2]
+[UNECE/TRANS/WP.1/165, 2018]
+[OBD-II / EOBD (European on-board diagnostics) regulations have standardized connections, format and messaging for this capability for M1 category cars since 2001 (petrol) and 2004 (diesel)]
+[SAE J3016 JUN2018] 
+[Regulation (EU) 2019/2144 Of The European Parliament And Of The Council of 27 November 2019 on type-approval requirements for motor vehicles and their trailers, and systems, components and separate technical units intended for such vehicles, as regards their general safety and the protection of vehicle occupants and vulnerable road users]
+[PAS 1881:2020]
+[PD ISO/PAS 21448:2019]
