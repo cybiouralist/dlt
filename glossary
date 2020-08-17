@@ -266,7 +266,7 @@ Note: A subchain allows for data isolation and confidentiality.
 67.2 tamper resistant* [NISTIR] -
 68 testnet* [ME] - a test network (testnet for short) is used to simulate the behavior of the main Ethereum network. 
 69 timestamp [ISO 22739:2020], [ISO/IEC 18014-1:2008] - time variant parameter which denotes a point in time with respect to a common time reference.
-70 timing service
+70 timing service*
 71 token [ISO 22739:2020] - digital asset that represents a collection of entitlements.
 71.2 security token*
 71.3 utility token*
@@ -274,27 +274,34 @@ Note: A subchain allows for data isolation and confidentiality.
 Note: Where appropriate, transaction is understood more narrowly, as the smallest unit of a work process related to interactions with distributed ledgers.
 [TC26] [на основе ГОСТ Р 55681-2013 / ISO/TR 26122:2008 (пункт 3.5)] наименьший элемент взаимодействия, который представляет собой обмен информацией между двумя или более пользователями и/или ИС. Примечание: транзакции могут быть как записаны, так и не записаны в реестр. Транзакцию, не записанную в реестр, будем называть неподтвержденной, а записанную – подтвержденной.
 [ME] data committed to the Ethereum Blockchain signed by an originating account, targeting a specific address. The transaction contains metadata such as the gas limit for the transaction.
-[MB] in simple terms, a transfer of bitcoin from one address to another. More precisely, a transaction is a signed data structure expressing a transfer of value. Transactions are transmitted over the bitcoin network, collected by miners, and included into blocks, made permanent on the blockchain.
-72.2 transaction fee  [ISO 22739:2020] - fee paid to miners or validators for inclusion of a transaction in a distributed ledger.
+[MB] in simple terms, a transfer of bitcoin from one address to another. More precisely, a transaction is a signed data structure expressing a transfer of value. Transactions are transmitted over the bitcoin network, collected by miners, and included into blocks, made permanent on the blockchain. 
+72.2 неподтвержденная транзакция* [TC26]
+72.3 подтвержденной транзакция* [TC26]
+72.4 блок транзакций* [TC26]
+72.5 transaction pool* [MB] - an unordered collection of transactions that are not in blocks in the main chain, but for which we have input transactions.
+72.5.2 ending transaction pool* [NISTIR]
+73 transaction fee  [ISO 22739:2020] - fee paid to miners or validators for inclusion of a transaction in a distributed ledger.
 [NISTIR]
-72.3 turing complete* [NISTIR]
-72.4 неподтвержденная транзакция* [TC26]
-72.5 подтвержденной транзакция* [TC26]
-72.6 блок транзакций* [TC26]
-72.7 transaction pool* [MB] - an unordered collection of transactions that are not in blocks in the main chain, but for which we have input transactions.
-72.7.2 ending transaction pool* [NISTIR]
-
-72.8 turing completeness* [MB] - a program language is called "Turing complete" if it can run any program that a Turing machine can run, given enough time and memory.
-72.9 Turing Complete* [ME] - in computability theory, a system of data-manipulation rules (such as a computer’s instruction set, a programming language, or a cellular automaton) is said to be Turing complete or computationally universal if it can be used to simulate any Turing machine. The concept is named after English mathematician and computer scientist Alan Turing.
-73 validated
-74 validator
-75 wallet - [307]
+74 transaction record [ISO 22739:2020] - record documenting a transaction of any type.
+Note 1: Transaction records can be included in, or referred to, in a ledger record.
+Note 2: Transaction records can include the result of a transaction.
+75 trust [ISO 22739:2020] - degree to which a user or other stakeholder has confidence that a product or system will behave as expected by that user or other stakeholder.
+76 turing complete* [NISTIR] 
+76.2 turing completeness* [MB] - a program language is called "Turing complete" if it can run any program that a Turing machine can run, given enough time and memory.
+76.3 Turing Complete* [ME] - in computability theory, a system of data-manipulation rules (such as a computer’s instruction set, a programming language, or a cellular automaton) is said to be Turing complete or computationally universal if it can be used to simulate any Turing machine. The concept is named after English mathematician and computer scientist Alan Turing.
+77 validated [ISO 22739:2020] - status of an entity when its required integrity conditions have been checked.
+Note: For example, in a DLT system, a transaction, ledger record, or block can be validated.
+78 validation [ISO 22739:2020] - function by which a transaction, ledger record (3.44), or block (3.2) is validated.
+79 validator [ISO 22739:2020] - entity in a DLT system that participates in validation.
+Note: In some DLT systems the DLT node that has the role of validator can digitally sign a ledger record or block.
+80 wallet [ISO 22739:2020] - application used to generate, manage, store or use private and public keys.
+Note: A wallet can be implemented as a software or hardware module.
 [ME] software that holds all your secret keys. Used as the interface to access and control your Ethereum accounts and interact with Smart Contracts. Notice that keys need not be stored in your wallet and can be retrieved from an offline storage (e.g. USB flash drive or paper) for improved security. Despite the name, wallets never store the actual coins or tokens.
 [MB] software that holds all your bitcoin addresses and secret keys. Use it to send, receive, and store your bitcoin.
-75.2 bitcoin / биткойн* [TC26] - 
-75.3 Корда* [TC26]
-75.4 Мастерчейн* [TC26]
-75.5 Hyperledger Fabric / Хайперледжер Фабрик* [TC26]
+81 bitcoin* (биткойн*) [TC26] - 
+81.2 Корда* [TC26]
+81.3 Мастерчейн* [TC26]
+81.4 Hyperledger Fabric / Хайперледжер Фабрик* [TC26]
 <end>
 
 * terms - words opened to disscussion / термины - слова для обсуждения (и включения в словарь "DLT & blockhain words")
@@ -471,12 +478,11 @@ Shard/sharding
 STO
 Security token - 
 
-
 Appendix:
 A1 Таблица сравнения упоминания терминов / Terms - comparative table: 
 https://docs.google.com/spreadsheets/d/1ls5RxhQ9IPPpqZttqSxkINXj1REOJ1QqPsGukTu4h3Q/edit?usp=sharing
 
-Источники / References: 
+References (источники): 
 [1] [ISO 22739:2020]
 [2] [307] - draft
 [3] [NISTIR]
