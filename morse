@@ -1,0 +1,67 @@
+Morse Code (MC)
+MC is a character encoding scheme that allows operators to send messages using a series of electrical pulses represented as short or long pulses, dots, and dashes in other words.
+MC is a method used in telecommunication to encode text characters as standardized sequences of two different signal durations, called dots and dashes or dits and dahs.
+The ITU has never codified formal Morse Code representations for currencies as the ISO 4217 Currency Codes are preferred for transmission.
+
+Letters	A, a · −
+Letters	B, b − · · ·
+Letters	C, c − · − ·
+Letters	D, d − · ·
+Letters	E, e ·
+Letters	F, f · · − ·
+Letters	G, g − − ·
+Letters	H, h · · · ·
+Letters	I, i · ·
+Letters	J, j · − − −
+Letters	K, k (Prosign for "Invitation to transmit") − · −
+Letters	L, l · − · ·
+Letters	M, m − −
+Letters	N, n − · 
+Letters	O, o − − − 
+Letters	P, p · − − · 
+Letters	Q, q − − · −
+Letters	R, r · − ·
+Letters	S, s · · ·
+Letters	T, t −
+Letters	U, u · · − 
+Letters	V, v · · · − 
+Letters	W, w · − − 
+Letters	X, x − · · − 
+Letters	Y, y − · − −
+Letters	Z, z − − · ·
+Numbers	0	− − − − − 
+Numbers	1	· − − − − 
+Numbers	2	· · − − − 
+Numbers	3	· · · − −
+Numbers	4 · · · · −
+Numbers	5	· · · · · 
+Numbers	6	− · · · · 
+Numbers	7	− − · · · 
+Numbers	8	− − − · · 
+Numbers	9	− − − − · 
+Period [.] · − · − · − 
+Punctuation	Comma [,] − − · · − −
+Punctuation	Question Mark [?]	· · − − · ·
+Punctuation	Apostrophe ['] · − − − − ·
+Punctuation	Exclamation Point [!] (KW digraph; not in ITU-R recommendation) − · − · − − 
+Punctuation	Slash/Fraction Bar [/]	− · · − · 
+Punctuation	Parenthesis (Open)	− · − − · 
+Punctuation	Parenthesis (Close)	− · − − · − 
+Punctuation	Ampersand (or "Wait") [&] (AS digraph; Prosign for "WAIT") · − · · · 
+Punctuation	Colon [:]	− − − · · · 
+Punctuation	Semicolon [;] (not in ITU-R ITU-R M.1172 or ITU-R M.1677-1) − · − · − · 
+Punctuation	Double Dash [=]	− · · · − 
+Punctuation	Plus sign [+]	· − · − · 
+Punctuation	Hyphen, Minus Sign [-]	− · · · · − 
+Punctuation	Underscore [_] (not in ITU-R ITU-R M.1172 or ITU-R M.1677-1)	· · − − · −
+Punctuation	Quotation mark ["] · − · · − · 
+Punctuation	Dollar sign [$] (SX digraph; not in ITU-R ITU-R M.1172 or ITU-R M.1677-1) · · · − · · − 
+Punctuation	At Sign [@] (AC digraph)	· − − · − · 
+Prosigns	End of work	· · · − · − 
+Prosigns	Error	· · · · · · · · 
+Prosigns	Invitation to Transmit (also used for K)	− · − 
+Prosigns	Starting Signal	− · − · − 
+Prosigns	New Page Signal (AR digraph, Message separator, Single-line display may use printed "+") · − · − · 
+Prosigns	Understood (Also used for Ŝ)	· · · − · 
+Prosigns	Wait · − · · · 
+
