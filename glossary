@@ -26,6 +26,7 @@ Glossary - глоссарий терминов
 [19770] item, thing or entity that has potential or actual value to an organization ISO/IEC 19770-1:2017(en).
 [24520] capital-forming goods used for the provision of the service ISO/TS 24520:2017(en).
 [15686] whole building or structure or unit of construction works, or a system or a component or part thereof ISO 15686-5:2017(en).
+актив - все, что имеет ценность для заинтересованной стороны.
 2.4 BIP* [MB]; [ME] - Bitcoin Improvement Proposals. A set of proposals that members of the bitcoin community have submitted to improve bitcoin. For example, BIP-21 is a proposal to improve the bitcoin uniform resource identifier (URI) scheme.
 2.5 big-endian* [ME] - A positional number representation where the most significant digit is first. The opposite of little-endian, where the least significant digit is first.
 2.6 Bitcoin* [MB] - the name of the currency unit (the coin), the network, and the software.
@@ -35,6 +36,7 @@ Glossary - глоссарий терминов
 [TC26] блок транзакций; данные, содержащие набор из одной или нескольких снабжённых отметками времени транзакций и, возможно, дополнительную информацию.
 [ME] a block is a collection of required information (a block header) about the comprised transactions, and a set of other block headers known as ommers. It is added to the Ethereum network by miners.
 [MB] a grouping of transactions, marked with a timestamp, and a fingerprint of the previous block. The block header is hashed to produce a proof of work, thereby validating the transactions. Valid blocks are added to the main blockchain by network consensus.
+структурированные данные, содержащие заголовок блока и данные блока.
 4 block header [ISO 22739:2020] - structured data that includes a cryptographic link to the previous block unless there is no previous block.
 Note: A block header can also contain a timestamp, a nonce, and other DLT platform specific data, including a hash value of corresponding transaction records.
 [NISTIR] the portion of a block that contains information about the block itself (block metadata), typically including a timestamp, a hash representation of the block data, the hash of the previous block’s header, and a cryptographic nonce (if needed).
@@ -52,6 +54,7 @@ Note: Blockchains are designed to be tamper-resistant and to create final, defin
 [TC26] - см. "цепная запись данных".
 [ME] a sequence of blocks validated by the proof-of-work system, each linking to its predecessor all the way to the genesis block. This varies from the Bitcoin protocol in that it does not have a block size limit; it instead uses varying gas limits.
 [MB] a list of validated blocks, each linking to its predecessor all the way to the genesis block.
+блокчейн - распределенный реестр с подтвержденными блоками, организованными в последовательную цепочку (блоков), созданный с использованием криптографических связей.
 6.2 цепная запись данных* [TC26] - реестр, данные в который записываются блоками таким образом, что каждый новый блок включает информацию о предыдущем блоке.
 7 blockchain system(s) - [ISO 22739:2020] system that implements a blockchain.
 Note: A blockchain system is a type of DLT system.
@@ -128,6 +131,7 @@ Note : In a decentralized system, the distribution of control among persons or o
 19 distributed ledger [ISO 22739:2020] - ledger that is shared across a set of DLT nodes and synchronized between the DLT nodes using a consensus mechanism.
 Note: A distributed ledger is designed to be tamper resistant, append-only and immutable containing confirmed and validated transactions.
 [307] ledger that is shared and synchronized in a distributed manner.
+распределенный реестр - реестр, который совместно используется набором DLT узлов сети (нод) и синхронизируется между данными узлами сети с использованием механизма консенсуса.
 20 distributed ledger technology (abbreviated as DLT) [ISO 22739:2020] - technology that enables the operation and use of distributed ledgers. 
 21 distributed ledger technology (DLT) account [ISO 22739:2020] - representation of an entity participating in a transaction.
 Note: A smart contract, digital asset, or one or more private keys, for example, can be associated with a DLT account.
