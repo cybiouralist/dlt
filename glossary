@@ -180,6 +180,8 @@ Note 2: In some contexts, the terms "hard fork" and " fork" are sometimes used f
 Note: Where appropriate, immutability also presumes keeping intact the order of ledger records and the links between the ledger records.
 (Immutable [NISTIR])
 30 interoperability [ISO 22739:2020] - ability of two or more systems or applications to exchange information and to mutually use the information that has been exchanged.
+30.2 inter ledger interoperability [ITU SG17] - ability of two or more distributed ledger protocols to exchange information and to use information that has been exchanged with one another.
+30.3 intra ledger interoperability [ITU SG17] - ability of two or more tokens within distributed ledger platform to operate with one another.
 31 incentive mechanism* [NISTIR]
 32 information / информация* [TC26] [Федеральный закон No 149-ФЗ (статья 2)]
 32.2 external information / внешняя информация* [TC26]
@@ -213,6 +215,8 @@ Note: A reference can be implemented as a cryptographic link.
 40 mining [ISO 22739:2020] - activity, in some consensus mechanisms, that creates and validates blocks or validates ledger records.
 Note: Participation in mining is often incentivized by block rewards and transaction fees.
 41 node(s) [ISO 22739:2020] - <organization of data> elementary component from which a data structure is built.
+node [ITU SG17] device or process that participates in a distributed ledger network.
+Note: Nodes can store a complete or partial replica of the distributed ledger.
 41.2 leaf node [ISO 22739:2020] - node that has no child nodes.
 41.3 full node* [NISTIR] 
 41.4 lightweight node* [NISTIR] 
@@ -243,10 +247,13 @@ Note: Public and private categories apply to DLT users, and permissioned and per
 56.2 (public key cryptography [NISTIR])
 56.3 keystore file* [ME] - a JSON-encoded file that contains a single (randomly generated) private key, encrypted by a passphrase for extra security.
 56.4 proof of stake consensus model* [NISTIR] / 
-56.4.2 процедура прихода к консенсусу с доказательством доли* [TC26]
-56.4.3. delegated proof of stake (DPoS) - another approach to Proof of Stake where a set number of nodes are elected or selected to function as the block-producing full validating nodes for the network.
+56.4.2 proof of stake [ITU SG17] - consensus process, where an existing stake in the distributed ledger system (e.g., the amount of that currency that you hold) is used to reach consensus.
+56.4.3 процедура прихода к консенсусу с доказательством доли* [TC26]
+56.4.4 delegated proof of stake (DPoS) - another approach to Proof of Stake where a set number of nodes are elected or selected to function as the block-producing full validating nodes for the network.
 56.5 proof of work consensus model* [NISTIR] / 
-56.5.2 процедура прихода к консенсусу с доказательством работы* [TC26]
+56.5.2 proof of work [ITU SG17] - consensus process to solve a difficult (costly, time-consuming) problem that produces a result that is easy for others to correctly verify. 
+Note: Producing a proof of work can be a random process with low probability so that a lot of trial and error is required on average before a valid proof of work is generated. Bitcoin uses the Hash cash proof of work system.
+56.5.3 процедура прихода к консенсусу с доказательством работы* [TC26]
 56.6 proof of authority / процедура прихода к консенсусу с доказательством права* [TC26]
 56.7 процедура прихода к консенсусу на основе византийского соглашения* [TC26]
 56.8 secret key* [ME], [MB] - see "private key".
@@ -268,7 +275,9 @@ Note: By convention the original chain is normally referred to as the "main chai
 Note: A smart contract can represent terms in a contract in law and create a legally enforceable obligation under the legislation of an applicable jurisdiction.
 [TC26] совокупность условий и последовательность действий, описанные в соответствии с политиками и процедурами ИС. Выполнение всех оговоренных условий, зависящее от конкретного состояния (состояний) ИС (в том числе, в результате проверки внешних по отношению к ИС условий), влечет автоматическое выполнение заранее определенной последовательности действий. Выполнение указанной последовательности действий, в свою очередь, также ведет к изменению состояния ИС.
 [ME] a program which executes on the Ethereum’s computing infrastructure.
+[ITU SG17] program written on the distributed ledger system which encodes the rules for specific types of distributed ledger system transactions in a way that can be validated, and triggered by specific conditions.
 66 soft fork [ISO 22739:2020] - change to a DLT platform that is not a hard fork and in which some records or blocks created by the DLT nodes using the old version of the DLT platform are not accepted as valid by DLT nodes using new versions of the DLT platform.
+[ITU SG17] change to the protocol or rules that result in a fork that is backward compatible.
 66.2 prune [ISO 22739:2020] - produce a smaller replica of a distributed ledger by removing all transaction records meeting specified criteria while ensuring that those transactions can be restored with integrity if needed.
 67 subchain [ISO 22739:2020] - logically separate chain that can form part of a blockchain system.
 Note: A subchain allows for data isolation and confidentiality.
@@ -278,13 +287,18 @@ Note: A subchain allows for data isolation and confidentiality.
 69 timestamp [ISO 22739:2020], [ISO/IEC 18014-1:2008] - time variant parameter which denotes a point in time with respect to a common time reference.
 70 timing service*
 71 token [ISO 22739:2020] - digital asset that represents a collection of entitlements.
+[ITU SG17] a digital representation of value on a shared distributed ledger that is owned and secured using cryptography to ensure its authenticity and prevent modification or tampering without the owner’s consent.
 71.2 security token*
 71.3 utility token*
+71.4 nonfungible token (NFT) [ITU SG17] - an entirely unique digital representation of asset.
+71.5 token ecosystem [ITU SG17] - digital system or digital space where participants and users interact and coordinate with each other using tokens.
+71.6 tokenomics (token economic) [ITU SG17] - economics of a DLT based token.
 72 transaction(s) [ISO 22739:2020] - smallest unit of a work process, which is one or more sequences of actions required to produce an outcome that complies with governing rules.
 Note: Where appropriate, transaction is understood more narrowly, as the smallest unit of a work process related to interactions with distributed ledgers.
 [TC26] [на основе ГОСТ Р 55681-2013 / ISO/TR 26122:2008 (пункт 3.5)] наименьший элемент взаимодействия, который представляет собой обмен информацией между двумя или более пользователями и/или ИС. Примечание: транзакции могут быть как записаны, так и не записаны в реестр. Транзакцию, не записанную в реестр, будем называть неподтвержденной, а записанную – подтвержденной.
 [ME] data committed to the Ethereum Blockchain signed by an originating account, targeting a specific address. The transaction contains metadata such as the gas limit for the transaction.
 [MB] in simple terms, a transfer of bitcoin from one address to another. More precisely, a transaction is a signed data structure expressing a transfer of value. Transactions are transmitted over the bitcoin network, collected by miners, and included into blocks, made permanent on the blockchain. 
+[ITU SG17] 
 72.2 неподтвержденная транзакция* [TC26]
 72.3 подтвержденной транзакция* [TC26]
 72.4 блок транзакций* [TC26]
@@ -295,6 +309,7 @@ Note: Where appropriate, transaction is understood more narrowly, as the smalles
 74 transaction record [ISO 22739:2020] - record documenting a transaction of any type.
 Note 1: Transaction records can be included in, or referred to, in a ledger record.
 Note 2: Transaction records can include the result of a transaction.
+[ITU SG17] whole of the exchange of information between nodes. A transaction is uniquely identified by a transaction identifier.
 75 trust [ISO 22739:2020] - degree to which a user or other stakeholder has confidence that a product or system will behave as expected by that user or other stakeholder.
 76 turing complete* [NISTIR] 
 76.2 turing completeness* [MB] - a program language is called "Turing complete" if it can run any program that a Turing machine can run, given enough time and memory.
@@ -306,9 +321,11 @@ Note: For example, in a DLT system, a transaction, ledger record, or block can b
 Note: In some DLT systems the DLT node that has the role of validator can digitally sign a ledger record or block.
 80 wallet [ISO 22739:2020] - application used to generate, manage, store or use private and public keys.
 Note: A wallet can be implemented as a software or hardware module.
+[ITU] software and/or hardware used to generate, manage and store both private and public keys and addresses, which enable DLT users to transact. Some wallets may interact with smart contracts and allow single and/or multi-signature.
 [ME] software that holds all your secret keys. Used as the interface to access and control your Ethereum accounts and interact with Smart Contracts. Notice that keys need not be stored in your wallet and can be retrieved from an offline storage (e.g. USB flash drive or paper) for improved security. Despite the name, wallets never store the actual coins or tokens.
 [MB] software that holds all your bitcoin addresses and secret keys. Use it to send, receive, and store your bitcoin.
 81 bitcoin* (биткойн*) [TC26] - 
+[ITU]
 81.2 Корда* [TC26]
 81.3 Мастерчейн* [TC26]
 81.4 Hyperledger Fabric / Хайперледжер Фабрик* [TC26]
@@ -487,6 +504,57 @@ distributed ledger technology (DLT)
 DLT system 
 DLT oracle - 
 fork 
+genesis block - the first block in a blockchain that serves to initialize the blockchain.
+governance [ISO/IEC 38500] - system of directing and controlling.
+hard fork - change to the protocol or rules that result in a fork that is not backward compatible.
+hash function [NIST]: a function that maps a bit string of arbitrary length to a fixed-length bit string. Approved hash functions satisfy the following properties: 
+1. One-way: It is computationally infeasible to find any input that maps to any pre-specified output, and
+2. Collision resistant: It is computationally infeasible to find any two distinct inputs that map to the same output
+hashing [NIST] - a method of calculating a relatively unique output (called a hash digest) for an input of nearly any size (a file, text, image, etc.). The smallest change of input, even a single bit, will result in a completely different output digest.
+hybrid permission - a combination of permissionless and permissioned accessibility.
+immutability [307] - property wherein ledger records cannot be modified or removed once added to a distributed ledger
+Note: Where appropriate, immutability also presumes keeping intact the order of ledger records and the links between the ledger records
+incentive mechanism [307] - method of offering reward for some activities concerned with the operation of a DLT system. 
+Note: An example of a reward is a block reward.
+inter ledger interoperability - ability of two or more distributed ledger protocols to exchange information and to use information that has been exchanged with one another.
+intra ledger interoperability - ability of two or more tokens within distributed ledger platform to operate with one another.
+ledger - information store that keeps final and definitive (immutable) records of transactions.
+Merkle tree [NIST] - a data structure where the data is hashed and combined until there is a singular root hash that represents the entire data structure.
+node - device or process that participates in a distributed ledger network.
+Note: Nodes can store a complete or partial replica of the distributed ledger.
+nonfungible token (NFT) - an entirely unique digital representation of asset.
+off-chain [307] - related to a blockchain system, but located, performed or run outside that blockchain system.
+on-chain [307] - located, performed or run inside a blockchain system
+participant - an actor who can access the ledger: read records or add records to.
+peer-to-peer [307] - relating to, using, or being a network of equal peers that share information and resources with each other directly without relying on a central entity. 
+permission [NIST] - intended allowable user actions (e.g., participate, read, write, execute).
+permissioned [307] - requiring authorization to perform a particular activity or activities.
+permissionless [307] - not requiring authorization to perform any particular activity
+permissioned distributed ledger system - distributed ledger system in which permissions are required to maintain and operate a node.
+permissionless distributed ledger system - distributed ledger system where permissions are not required to maintain and operate a node.
+Note: Examples of permissionless ledger are the Bitcoin and Ethereum blockchains, where any user can join the network and start mining
+proof of work - consensus process to solve a difficult (costly, time-consuming) problem that produces a result that is easy for others to correctly verify. 
+Note: Producing a proof of work can be a random process with low probability so that a lot of trial and error is required on average before a valid proof of work is generated. Bitcoin uses the Hash cash proof of work system.
+proof of stake - consensus process, where an existing stake in the distributed ledger system (e.g., the amount of that currency that you hold) is used to reach consensus.
+public key cryptography [ISO/IEC 2382] - cryptography in which a public key and a corresponding private key are used for encryption and decryption, where public key is disseminated, and private key is known only to the key owner. 
+Note: Users can digitally sign data with their private key, and the resulting signature can be verified by anyone using the corresponding public key.
+public DLT system [307] - DLT system which is accessible to the public for use.
+private DLT system [307] - DLT system which is accessible for use only to a limited group of  DLT users.
+sidechain [307]: blockchain system that interoperates with a separate associated blockchain system to perform a specific function in relation to the associated blockchain system 
+Note: By convention the original chain is normally referred to as the "main chain", while any additional blockchains which allow DLT users to transact on the main chain are referred to as "sidechains”.
+smart contract - program written on the distributed ledger system which encodes the rules for specific types of distributed ledger system transactions in a way that can be validated, and triggered by specific conditions.
+soft fork - change to the protocol or rules that result in a fork that is backward compatible.
+subchain [307] - logically separate chain that can form part of a blockchain system.
+Note: A subchain allows for data isolation and confidentiality.
+stateful contract - contract with specified states.
+stateless contract - contract lacking specified states. 
+stateful execution of contract - execution of a program that occurs on all nodes that changes a set of bits representing value information stored on-chain within the contract itself. All nodes that contain the contract must execute the program in order to change a set of bits representing value information.
+stateless execution of contract - execution of a program that occurs on an individual node (or subset of nodes) that changes a set of bits representing value information stored on-chain but apart from the contract.
+token - a digital representation of value on a shared distributed ledger that is owned and secured using cryptography to ensure its authenticity and prevent modification or tampering without the owner’s consent.
+token ecosystem - digital system or digital space where participants and users interact and coordinate with each other using tokens.
+tokenomics (token economic) - economics of a DLT based token.
+transaction - whole of the exchange of information between nodes. A transaction is uniquely identified by a transaction identifier.
+wallet - software and/or hardware used to generate, manage and store both private and public keys and addresses, which enable DLT users to transact. Some wallets may interact with smart contracts and allow single and/or multi-signature.
 
 Дополнительные термины / Additional terms:
 Account 
@@ -538,10 +606,12 @@ References (источники):
 [12] [OECD] 
 [13] [ISO/TS 19299:2015]
 [14] [ISO/IEC 9798-1:2010]
-[15] [ISO 15489-1:2016 
+[15] [ISO 15489-1:2016]
 [16] [ISO/IEC 18014-1:2008]
 [17] [ITU SG17]
 [18] [ISO 7498-2]
-[19] https://docs.google.com/document/d/159G_9kZYsb4D2joLd5RlufXYZ9PeBzNZA2Nv0rWYgOI/edit?usp=sharing
+[19] [ISO/IEC 38500]
+[20] [ISO/IEC 2382]
+[21] https://docs.google.com/document/d/159G_9kZYsb4D2joLd5RlufXYZ9PeBzNZA2Nv0rWYgOI/edit?usp=sharing
 
 Creative Commons Attribution licence (CC-BY) 2018-2020 (c) A.Vlasov
