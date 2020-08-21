@@ -125,9 +125,14 @@ Note : In a decentralized system, the distribution of control among persons or o
 16.2 digest* [NISTIR] - see "hash digest".
 17 digital signature - [307] data which, when appended to a digital document, enable the user of the document to authenticate its origin and integrity [ISO 14641:2018, 3.17].
 [NISTIR] a cryptographic technique that utilizes asymmetric-keys to determine authenticity (i.e., users can verify that the message was signed with a private key corresponding to the specified public key), non-repudiation (a user cannot deny having sent a message) and integrity (that the message was not altered during transmission).
+[ISO 7498-2] data appended to, or a cryptographic transformation (see cryptography) of a data unit that allows a recipient of the data unit to prove the source and integrity of the data unit and protect against forgery, e.g., by the recipient.
+Note: Consider the definition ‘digital signature’ as “Data appended to data units, or cryptographic changes made to data units, which allows the recipient of the data unit to confirm the origin and integrity of the data and protect the data from being forged.”
+distributed ledger - a type of ledger that is shared, replicated, and synchronized in a distributed and decentralized manner.
 17.2 signature* - 
 18 decentralized application DApp [ISO 22739:2020] - application that runs on a decentralized system.
-18.2 distributed application DApp [307] - application that runs on a distributed system.
+18.2 decentralized autonomous organization (DAO) [ITU SG17] - a digital entity that manages assets and operates autonomously in a decentralized system, but also relies on individuals tasked to perform certain functions that the automaton itself cannot.
+[WTO] 
+18.3 distributed application DApp [307] - application that runs on a distributed system.
 19 distributed ledger [ISO 22739:2020] - ledger that is shared across a set of DLT nodes and synchronized between the DLT nodes using a consensus mechanism.
 Note: A distributed ledger is designed to be tamper resistant, append-only and immutable containing confirmed and validated transactions.
 [307] ledger that is shared and synchronized in a distributed manner.
@@ -218,7 +223,7 @@ Note: A nonce is often random or pseudo-random. It is commonly used to guard aga
 44 off-ledger [ISO 22739:2020] - related to a DLT system, but located, performed, or run outside that DLT system.
 45 on-chain [ISO 22739:2020] - located, performed, or run inside a blockchain system.
 46 on-ledger [ISO 22739:2020] - located, performed, or run inside a DLT system.
-47 oracle (DLT oracle)* 
+47 oracle (DLT oracle)* [ITU SG17] - service that supplies information to a distributed ledger using data from outside of a distributed ledger system.
 48 orphan block*
 48.2 nonce Orphan block* [NISTIR]
 49 password*
@@ -238,9 +243,10 @@ Note: Public and private categories apply to DLT users, and permissioned and per
 56.2 (public key cryptography [NISTIR])
 56.3 keystore file* [ME] - a JSON-encoded file that contains a single (randomly generated) private key, encrypted by a passphrase for extra security.
 56.4 proof of stake consensus model* [NISTIR] / 
-процедура прихода к консенсусу с доказательством доли* [TC26]
+56.4.2 процедура прихода к консенсусу с доказательством доли* [TC26]
+56.4.3. delegated proof of stake (DPoS) - another approach to Proof of Stake where a set number of nodes are elected or selected to function as the block-producing full validating nodes for the network.
 56.5 proof of work consensus model* [NISTIR] / 
-процедура прихода к консенсусу с доказательством работы* [TC26]
+56.5.2 процедура прихода к консенсусу с доказательством работы* [TC26]
 56.6 proof of authority / процедура прихода к консенсусу с доказательством права* [TC26]
 56.7 процедура прихода к консенсусу на основе византийского соглашения* [TC26]
 56.8 secret key* [ME], [MB] - see "private key".
@@ -311,7 +317,7 @@ Note: A wallet can be implemented as a software or hardware module.
 * terms - words opened to disscussion / термины - слова для обсуждения (и включения в словарь "DLT & blockhain words")
 & new terms from the [NISTIR]; [TC26]; [ME]; [MB]; etc / новые термины из [NISTIR]; [TC26]; [ME]; [MB] и др, которых нет в [ISO 22739:2020]; [307]
 
-[2] [NISTIR]
+[3] [NISTIR]
 Address
 Assets
 Asymmetric-key cryptography
@@ -373,7 +379,7 @@ Transaction fee
 Turing complete 
 Wallet
 
-[3] [TC26]
+[4] [TC26]
 информация (information) [Федеральный закон No 149-ФЗ (статья 2)]
 информационная система (information system) [на основе ГОСТ ISO/TS 22220-2013 (п 3.4)]
 разрешенные механизмы ИС (конфигурация ИС) 
@@ -425,14 +431,14 @@ Wallet
 Мастерчейн
 Хайперледжер Фабрик (Hyperledger Fabric)
 
-[4] [WTO]:
+[5] [WTO]:
 Asymmetric key algorithms
 Blockchain
 Byzantine Fault
 Consensus protocol
 Cryptocurrency
 Cryptography
-Decentralized autonomous organization (DAO)
+Decentralized autonomous organization (DAO) 
 Digital signature
 Distributed ledger
 Encryption
@@ -451,6 +457,36 @@ Shard/sharding
 Smart contract
 Symmetric key algorithms
 Time-stamping
+
+[17] [ITU SG17]:
+account - representation of an entity whose data is recorded on a distributed ledger.
+address - identifier for entity(ies) performing transactions or other actions in a blockchain or distributed ledger network.
+application [b-Y.2091] - a structured set of capabilities, which provide value-added functionality supported by one or more services.
+asset - representation of value.
+bitcoin - an example of a blockchain using Proof of Work.
+block - individual data unit of a blockchain, composed of a collection of transactions and a block header.
+Note: A block may be mutable and considered as the digital entity described in clause 3.2.2 in [b-X.1255], however, it can be applied to other networks or other computational facilities.
+block header [307]: structured data that includes a cryptographic link to the previous block unless there is no previous block 
+NOTE - A block header can also contain a timestamp, a nonce, and other DLT platform specific data, including a hash value of corresponding transaction records.
+blockchain - a type of distributed ledger which is composed of digitally recorded data arranged as a successively growing chain of blocks with each block cryptographically linked and hardened against tampering and revision.
+blockchain system [307] - system that implements a blockchain
+blockchain as a service (BaaS) - a cloud service category in which the capabilities provided to the cloud service customer are to deploy and manage a blockchain network enabling the ability of consensus, smart contract, transaction, crypto engine, block record storage, peer-to-peer connectivity and management using blockchain.
+Byzantine fault tolerance - property that enables a system to continue operating properly even if some of its components fail or existence of intentional bad actors.
+compliance - adherence to specified requirements. 
+consensus - agreement that a set of transactions is valid.
+consensus mechanism - rules and procedures by which consensus is reached.
+crash fault tolerance - property that enables a system to continue operating properly even if some of its components fail.
+decentralized application - application that runs in a distributed and decentralized computing environment.
+***
+decentralized autonomous organization (DAO) - a digital entity that manages assets and operates autonomously in a decentralized system, but also relies on individuals tasked to perform certain functions that the automaton itself cannot.
+decentralized system [307]
+delegated proof of stake (DPoS) - another approach to Proof of Stake where a set number of nodes are elected or selected to function as the block-producing full validating nodes for the network.
+digital signature [ISO 7498-2]
+distributed ledger - a type of ledger that is shared, replicated, and synchronized in a distributed and decentralized manner.
+distributed ledger technology (DLT)
+DLT system 
+DLT oracle - 
+fork 
 
 Дополнительные термины / Additional terms:
 Account 
@@ -482,13 +518,14 @@ Shard/sharding
 STO
 Security token - 
 
+
 Appendix:
 A1 Таблица сравнения упоминания терминов / Terms - comparative table: 
 https://docs.google.com/spreadsheets/d/1ls5RxhQ9IPPpqZttqSxkINXj1REOJ1QqPsGukTu4h3Q/edit?usp=sharing
 
 References (источники): 
 [1] [ISO 22739:2020]
-[2] [307] - draft
+[2] [307], [ISO 307] - draft
 [3] [NISTIR]
 [4] [TC26]
 [5] [WTO]
@@ -503,6 +540,8 @@ References (источники):
 [14] [ISO/IEC 9798-1:2010]
 [15] [ISO 15489-1:2016 
 [16] [ISO/IEC 18014-1:2008]
-[17] https://docs.google.com/document/d/159G_9kZYsb4D2joLd5RlufXYZ9PeBzNZA2Nv0rWYgOI/edit?usp=sharing
+[17] [ITU SG17]
+[18] [ISO 7498-2]
+[19] https://docs.google.com/document/d/159G_9kZYsb4D2joLd5RlufXYZ9PeBzNZA2Nv0rWYgOI/edit?usp=sharing
 
 Creative Commons Attribution licence (CC-BY) 2018-2020 (c) A.Vlasov
