@@ -128,9 +128,12 @@ Note : In a decentralized system, the distribution of control among persons or o
 [ISO 7498-2] data appended to, or a cryptographic transformation (see cryptography) of a data unit that allows a recipient of the data unit to prove the source and integrity of the data unit and protect against forgery, e.g., by the recipient.
 Note: Consider the definition ‘digital signature’ as “Data appended to data units, or cryptographic changes made to data units, which allows the recipient of the data unit to confirm the origin and integrity of the data and protect the data from being forged.”
 distributed ledger - a type of ledger that is shared, replicated, and synchronized in a distributed and decentralized manner.
+[ME] a short string of data a user produces for a document using a private key such that anyone with the corresponding public key, the signature, and the document can verify that (1) the document was “signed” by the owner of that particular private key, and (2) the document was not changed after it was signed.
 17.2 signature* - 
 18 decentralized application DApp [ISO 22739:2020] - application that runs on a decentralized system.
+[ME] at a minimum, it is a smart contract and a web user interface. More broadly, a DApp is a web application that is built on top of open, decentralized, peer-to-peer infrastructure services. In addition, many DApps include decentralized storage and/or a message protocol and platform.
 18.2 decentralized autonomous organization (DAO) [ITU SG17] - a digital entity that manages assets and operates autonomously in a decentralized system, but also relies on individuals tasked to perform certain functions that the automaton itself cannot.
+[ME] - a company or other organization that operates without hierarchical management. Also may refer to a contract named“The DAO” launched on April 30, 2016, which was then hacked in June 2016; this ultimately motivated a hard fork (codenamed DAO) at block #1,192,000, which reversed the hacked DAO contract and caused Ethereum and Ethereum Classic to split into two competing systems.
 [WTO] 
 18.3 distributed application DApp [307] - application that runs on a distributed system.
 19 distributed ledger [ISO 22739:2020] - ledger that is shared across a set of DLT nodes and synchronized between the DLT nodes using a consensus mechanism.
@@ -474,6 +477,13 @@ Shard/sharding
 Smart contract
 Symmetric key algorithms
 Time-stamping
+
+[6] [ME]
+DAO (Decentralized Autonomous Organization) - a company or other organization that operates without hierarchical management. Also may refer to a contract named“The DAO” launched on April 30, 2016, which was then hacked in June 2016; this ultimately motivated a hard fork (codenamed DAO) at block #1,192,000, which reversed the hacked DAO contract and caused Ethereum and Ethereum Classic to split into two competing systems.
+DApp (Decentralized application) - at a minimum, it is a smart contract and a web user interface. More broadly, a DApp is a web application that is built on top of open, decentralized, peer-to-peer infrastructure services. In addition, many DApps include decentralized storage and/or a message protocol and platform.
+Deed - non-fungible token (NFT) standard introduced by the ERC721 proposal. Unlike ERC20 tokens, deeds prove ownership and are not interchangeable, though they are not recognized as legal documents in any jurisdiction—at least not currently (see also “NFT”).
+Difficulty - a network-wide setting that controls how much computation is required to produce a proof of work.
+Digital signature - a short string of data a user produces for a document using a private key such that anyone with the corresponding public key, the signature, and the document can verify that (1) the document was “signed” by the owner of that particular private key, and (2) the document was not changed after it was signed.
 
 [17] [ITU SG17]:
 account - representation of an entity whose data is recorded on a distributed ledger.
