@@ -35,6 +35,7 @@ Glossary - глоссарий терминов
 [NISTIR] a data structure containing a block header and block data.
 [TC26] блок транзакций; данные, содержащие набор из одной или нескольких снабжённых отметками времени транзакций и, возможно, дополнительную информацию.
 [ME] a block is a collection of required information (a block header) about the comprised transactions, and a set of other block headers known as ommers. It is added to the Ethereum network by miners.
+[ME]	Блок. Block. Набор необходимой информации о транзакциях (заголовок блока), входящих в блок, и набор заголовков других блоков, известных как оммеры (ommers). Блоки добавляются в сеть Ethereum майнерами.
 [MB] a grouping of transactions, marked with a timestamp, and a fingerprint of the previous block. The block header is hashed to produce a proof of work, thereby validating the transactions. Valid blocks are added to the main blockchain by network consensus.
 структурированные данные, содержащие заголовок блока и данные блока.
 4 block header [ISO 22739:2020] - structured data that includes a cryptographic link to the previous block unless there is no previous block.
@@ -53,6 +54,7 @@ Note: Blockchains are designed to be tamper-resistant and to create final, defin
 [NISTIR] blockchains are distributed digital ledgers of cryptographically signed transactions that are grouped into blocks. Each block is cryptographically linked to the previous one (making it tamper evident) after validation and undergoing a consensus decision. As new blocks are added, older blocks become more difficult to modify (creating tamper resistance). New blocks are replicated across copies of the ledger within the network, and any conflicts are resolved automatically using established rules.
 [TC26] - см. "цепная запись данных".
 [ME] a sequence of blocks validated by the proof-of-work system, each linking to its predecessor all the way to the genesis block. This varies from the Bitcoin protocol in that it does not have a block size limit; it instead uses varying gas limits.
+[ME] Блокчейн. Blockchain. В Ethereum это последовательность блоков, проверенных системой алгоритмов консенсуса PoW (Proof of work), каждый из которых указывает на цепочку предыдущих блоков вплоть до генезиз-блока (genesis block). В отличие от протокола Bitcoin данная сеть не ограничивает максимальный размер блоков; вместо этого используются изменяющиеся лимиты на газ.
 [MB] a list of validated blocks, each linking to its predecessor all the way to the genesis block.
 блокчейн - распределенный реестр с подтвержденными блоками, организованными в последовательную цепочку (блоков), созданный с использованием криптографических связей.
 6.2 цепная запись данных* [TC26] - реестр, данные в который записываются блоками таким образом, что каждый новый блок включает информацию о предыдущем блоке.
@@ -132,8 +134,10 @@ distributed ledger - a type of ledger that is shared, replicated, and synchroniz
 17.2 signature* - 
 18 decentralized application DApp [ISO 22739:2020] - application that runs on a decentralized system.
 [ME] at a minimum, it is a smart contract and a web user interface. More broadly, a DApp is a web application that is built on top of open, decentralized, peer-to-peer infrastructure services. In addition, many DApps include decentralized storage and/or a message protocol and platform.
+[ME] DApp (Decentralized Application). Децентрализованное приложение - это смарт-контракт с пользовательским веб-интерфейсом. В более широком смысле DApp — это веб-приложение, построенное поверх открытых децентрализованных пиринговых инфраструктурных сервисов. Кроме того, многие DApp-приложения содержат децентрализованное хранилище и/или протокол с платформой для обмена сообщениями.
 18.2 decentralized autonomous organization (DAO) [ITU SG17] - a digital entity that manages assets and operates autonomously in a decentralized system, but also relies on individuals tasked to perform certain functions that the automaton itself cannot.
 [ME] - a company or other organization that operates without hierarchical management. Also may refer to a contract named“The DAO” launched on April 30, 2016, which was then hacked in June 2016; this ultimately motivated a hard fork (codenamed DAO) at block #1,192,000, which reversed the hacked DAO contract and caused Ethereum and Ethereum Classic to split into two competing systems.
+[ME] DAO. Децентрализованная автономная организация (англ. Decentralized Autonomous Organization или DAO) - компания или другая организация, которая функционирует без иерархической модели управления. Может также обозначать одноименный контракт, запущенный 30 апреля 2016 и взломанный в июне того же года; это в итоге послужило мотивацией для жесткого ответвления ветвления (с кодовым именем DAO) от блока №1192000, которое откатило взломанный контракт и привело к разделению на два системы: Ethereum и Ethereum Classic. 
 [WTO] 
 18.3 distributed application DApp [307] - application that runs on a distributed system.
 19 distributed ledger [ISO 22739:2020] - ledger that is shared across a set of DLT nodes and synchronized between the DLT nodes using a consensus mechanism.
