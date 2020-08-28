@@ -229,6 +229,8 @@ Note: Participation in mining is often incentivized by block rewards and transac
 41 node(s) [ISO 22739:2020] - <organization of data> elementary component from which a data structure is built.
 node [ITU SG17] device or process that participates in a distributed ledger network.
 Note: Nodes can store a complete or partial replica of the distributed ledger.
+[ME] a software client that participates in the network.
+[ME] узел - лиент программного обеспечения (программный клиент), который участвует в работе сети.
 41.2 leaf node [ISO 22739:2020] - node that has no child nodes.
 41.3 full node* [NISTIR] 
 41.4 lightweight node* [NISTIR] 
