@@ -327,7 +327,8 @@ Note 2: Transaction records can include the result of a transaction.
 75 trust [ISO 22739:2020] - degree to which a user or other stakeholder has confidence that a product or system will behave as expected by that user or other stakeholder.
 76 turing complete* [NISTIR] 
 76.2 turing completeness* [MB] - a program language is called "Turing complete" if it can run any program that a Turing machine can run, given enough time and memory.
-76.3 Turing Complete* [ME] - in computability theory, a system of data-manipulation rules (such as a computer’s instruction set, a programming language, or a cellular automaton) is said to be Turing complete or computationally universal if it can be used to simulate any Turing machine. The concept is named after English mathematician and computer scientist Alan Turing.
+76.3 Turing Complete* [ME] - A concept named after English mathematician and computer scientist Alan Turing: a system of data-manipulation rules (such as a computer’s instruction set, a programming language, or a cellular automaton) is said to be “Turing complete” or “computationally universal” if it can be used to simulate any Turing machine.
+[ME - draft] in computability theory, a system of data-manipulation rules (such as a computer’s instruction set, a programming language, or a cellular automaton) is said to be Turing complete or computationally universal if it can be used to simulate any Turing machine. The concept is named after English mathematician and computer scientist Alan Turing.
 77 validated [ISO 22739:2020] - status of an entity when its required integrity conditions have been checked.
 Note: For example, in a DLT system, a transaction, ledger record, or block can be validated.
 78 validation [ISO 22739:2020] - function by which a transaction, ledger record (3.44), or block (3.2) is validated.
