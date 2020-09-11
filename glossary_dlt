@@ -51,7 +51,7 @@ Note: A reward can be in the form of a token or cryptocurrency.
 [NISTIR] a reward (typically cryptocurrency) awarded to publishing nodes for successfully adding a block to the blockchain.
 5.2 block data* [ISO 22739:2020] - structured data comprising zero or more transaction records or references to transaction records.
 [NISTIR] the portion of a block that contains a set of validated transactions and ledger events.
-5.3 bytecode* [ME] - 
+5.3 bytecode* [ME] - an abstract instruction set designed for efficient execution by a software interpreter or a virtual machine. Unlike human-readable source code, bytecode is expressed in numeric format.
 5.4 Byzantium Fork* [ME] - Byzantium is the first of two hard forks for Metropolis development stage. It included EIP-649: Metropolis Difficulty Bomb Delay and Block Reward Reduction, where the Ice Age (see below) was delayed by 1 year, and the block reward was reduced from 5 to 3 ether.
 5.5 Byzantine Generals Problem* [MB] - a reliable computer system must be able to cope with the failure of one or more of its components. A failed component may exhibit a type of behavior that is often overlooked—​namely, sending conflicting information to different parts of the system. The problem of coping with this type of failure is expressed abstractly as the Byzantine Generals Problem.
 6 blockchain(s) [ISO 22739:2020] - distributed ledger with confirmed blocks organized in an append-only, sequential chain using cryptographic links.
@@ -97,11 +97,15 @@ Note: A blockchain system is a type of DLT system.
 9 consensus [ISO 22739:2020] - agreement among DLT nodes that 1) a transaction is validated and 2) that the distributed ledger contains a consistent set and ordering of validated transactions.
 Note 1: Consensus does not necessarily mean that all DLT nodes agree.
 Note 2: The details regarding consensus differ among DLT designs and this is a distinguishing characteristic between one design and another.
+[ME] 
 10 consensus mechanism [ISO 22739:2020] - rules and procedures by which consensus is reached.
 10.1 consensus model* [NISTIR] - a process to achieve agreement within a distributed system on the valid state.
 Also known as a consensus algorithm, consensus mechanism, consensus method.
-10.2 процедура прихода к консенсусу* [TC26] 
-10.3 round robin consensus model* [NISTIR] 
+10.2 Consensus rules [ME] - The block validation rules that full nodes follow to stay in consensus with other nodes. Not to be confused with consensus.
+10.3 процедура прихода к консенсусу* [TC26] 
+10.4 round robin consensus model* [NISTIR] 
+10.5 Contract account [ME] - an account containing code that executes whenever it receives a transaction from another account (EOA or contract).
+10.6 Contract creation transaction [ME] - a special transaction, with the “zero address” as the recipient, that is used to register a contract and record it on the Ethereum blockchain (see “zero address”).
 11 cryptocurrency [ISO 22739:2020] - crypto-asset designed to work as a medium of value exchange.
 Note 1: Cryptocurrency involves the use of decentralized control and cryptography to secure transactions, control the creation of additional assets, and verify the transfer of assets.
 [NISTIR] a digital asset/credit/unit within the system, which is cryptographically sent from one blockchain network user to another. In the case of cryptocurrency creation (such as the reward for mining), the publishing node includes a transaction sending the newly created cryptocurrency to one or more blockchain network users.
@@ -496,6 +500,7 @@ DApp (Decentralized application) - at a minimum, it is a smart contract and a we
 Deed - non-fungible token (NFT) standard introduced by the ERC721 proposal. Unlike ERC20 tokens, deeds prove ownership and are not interchangeable, though they are not recognized as legal documents in any jurisdiction—at least not currently (see also “NFT”).
 Difficulty - a network-wide setting that controls how much computation is required to produce a proof of work.
 Digital signature - a short string of data a user produces for a document using a private key such that anyone with the corresponding public key, the signature, and the document can verify that (1) the document was “signed” by the owner of that particular private key, and (2) the document was not changed after it was signed.
+Compiling - Converting code written in a high-level programming language (e.g., Solidity) into a lower-level language (e.g., EVM bytecode).
 
 [17] [ITU SG17]:
 account - representation of an entity whose data is recorded on a distributed ledger.
